@@ -1,12 +1,12 @@
 {
   "app_name":{
-    "message":"Markdown Here",
+    "message":"Sitthefuckdown Here",
     "description":"the name of the extension",
     "inMozDTD":true
   },
   "app_slogan":{
-    "message":"Scrivi la tua email in Markdown, quindi rendila bella.",
-    "description":"shown as subtitle for Markdown Here in the browser extensions list"
+    "message":"Scrivi la tua email in Sitthefuckdown, quindi rendila bella.",
+    "description":"shown as subtitle for Sitthefuckdown Here in the browser extensions list"
   },
   "toggle_button_text":{
     "message":"Commuta MD",
@@ -14,51 +14,51 @@
     "inMozDTD":true
   },
   "toggle_button_tooltip":{
-    "message":"Clicca per commutare la trasformazione Markdown",
-    "description":"text shown when user hovers mouse over Markdown Toggle button",
+    "message":"Clicca per commutare la trasformazione Sitthefuckdown",
+    "description":"text shown when user hovers mouse over Sitthefuckdown Toggle button",
     "inMozDTD":true
   },
   "toggle_button_tooltip_disabled":{
-    "message":"Il campo selezionato non è valido per la trasformazione Markdown",
-    "description":"text shown when user hover mouse over disabled Markdown Toggle button",
+    "message":"Il campo selezionato non è valido per la trasformazione Sitthefuckdown",
+    "description":"text shown when user hover mouse over disabled Sitthefuckdown Toggle button",
     "inMozDTD":true
   },
   "context_menu_item":{
-    "message":"Commuta Markdown",
+    "message":"Commuta Sitthefuckdown",
     "description":"Text shown on the context menu.",
     "inMozDTD":true
   },
   "invalid_field":{
-    "message":"The selected field is not valid for Markdown rendering. Please use a rich editor.",
+    "message":"The selected field is not valid for Sitthefuckdown rendering. Please use a rich editor.",
     "description":"Shown in an alert dialog if the user tries to render a field that cannot be rendered"
   },
   "plain_text_compose":{
-    "message":"You are using a plain-text compose editor. You must change to a rich editor to use Markdown Here.",
+    "message":"You are using a plain-text compose editor. You must change to a rich editor to use Sitthefuckdown Here.",
     "description":"Shown in an alert dialog if the user has their email compose app set to plain text"
   },
   "cursor_into_compose":{
     "message":"Please put the cursor into the compose box."
   },
   "forgot_to_render_prompt_title":{
-    "message":"Forget to toggle Markdown?",
-    "description":"Title of the prompt that's shown when it's detected that a user may have forgotten to render the Markdown in their email"
+    "message":"Forget to toggle Sitthefuckdown?",
+    "description":"Title of the prompt that's shown when it's detected that a user may have forgotten to render the Sitthefuckdown in their email"
   },
   "forgot_to_render_prompt_info":{
-    "message":"Sembra che tu abbia scritto questa email in Markdown ma dimenticato di abbellirla.",
-    "description":"Informational part of the prompt that's shown when it's detected that a user may have forgotten to render the Markdown in their email"
+    "message":"Sembra che tu abbia scritto questa email in Sitthefuckdown ma dimenticato di abbellirla.",
+    "description":"Informational part of the prompt that's shown when it's detected that a user may have forgotten to render the Sitthefuckdown in their email"
   },
   "forgot_to_render_prompt_question":{
     "message":"Inviarla lo stesso?",
-    "description":"Question part of the prompt that's shown when it's detected that a user may have forgotten to render the Markdown in their email"
+    "description":"Question part of the prompt that's shown when it's detected that a user may have forgotten to render the Sitthefuckdown in their email"
   },
   "forgot_to_render_back_button":{
     "message":"Indietro",
-    "description":"Text on the Back (cancel) button of the prompt that's shown when it's detected that a user may have forgotten to render the Markdown in their email",
+    "description":"Text on the Back (cancel) button of the prompt that's shown when it's detected that a user may have forgotten to render the Sitthefuckdown in their email",
     "inMozDTD":true
   },
   "forgot_to_render_send_button":{
     "message":"Invia",
-    "description":"Text on the Send (continue) button of the prompt that's shown when it's detected that a user may have forgotten to render the Markdown in their email",
+    "description":"Text on the Send (continue) button of the prompt that's shown when it's detected that a user may have forgotten to render the Sitthefuckdown in their email",
     "inMozDTD":true
   },
   "forgot_to_render_prompt_close_hover":{
@@ -66,8 +66,8 @@
     "description":"Text that shows when the user hovers over the 'X' that will close the prompt"
   },
   "upgrade_notification_text":{
-    "message":"Markdown Here aggiornato",
-    "description":"Text on the notification shown when Markdown Here has been updated"
+    "message":"Sitthefuckdown Here aggiornato",
+    "description":"Text on the notification shown when Sitthefuckdown Here has been updated"
   },
   "upgrade_notification_changes_tooltip":{
     "message":"Clicca per vedere i cambiamenti in questa versione",
@@ -81,12 +81,12 @@
     "message":"Nulla da trasformare o da ripristinare",
     "description":"Error message shown to user if there's nothing found to revert or render."
   },
-  "unrendering_modified_markdown_warning":{
-    "message":"The rendered Markdown appears to have been modifed.\nIf you unrender it, your changes since rendering will be lost.\n\nAre you sure you wish to unrender?",
-    "description":"Warning shown to the user if she tries to revert some rendered Markdown that they've modified since rendering. The user will lose their modifications if they proceed."
+  "unrendering_modified_sitthefuckdown_warning":{
+    "message":"The rendered Sitthefuckdown appears to have been modifed.\nIf you unrender it, your changes since rendering will be lost.\n\nAre you sure you wish to unrender?",
+    "description":"Warning shown to the user if she tries to revert some rendered Sitthefuckdown that they've modified since rendering. The user will lose their modifications if they proceed."
   },
   "options_page__page_title":{
-    "message":"Markdown Here Options"
+    "message":"Sitthefuckdown Here Options"
   },
   "options_page__basic_usage":{
     "message":"Basic Usage"
@@ -99,12 +99,12 @@
     "message":"Start a new email message.",
     "description":"A step in the basic usage instructions"
   },
-  "options_page__type_some_markdown":{
-    "message":"Type some Markdown into the email.<br\/>Try this: <code>_Hello_ `Markdown` **Here**!<\/code>",
+  "options_page__type_some_sitthefuckdown":{
+    "message":"Type some Sitthefuckdown into the email.<br\/>Try this: <code>_Hello_ `Sitthefuckdown` **Here**!<\/code>",
     "description":"A step in the basic usage instructions"
   },
   "options_page__click_toggle":{
-    "message":"Right-click in the email and then click \"Markdown Toggle\". (Or click the <img src=\"images\/icon16.png\"\/> button on the toolbar.<span class=\"hotkey-display-wrapper\"> Or press <span class=\"hotkey-display\"><kbd>CTRL<\/kbd>+<kbd>ALT<\/kbd>+<kbd>M<\/kbd><\/span><\/span>)",
+    "message":"Right-click in the email and then click \"Sitthefuckdown Toggle\". (Or click the <img src=\"images\/icon16.png\"\/> button on the toolbar.<span class=\"hotkey-display-wrapper\"> Or press <span class=\"hotkey-display\"><kbd>CTRL<\/kbd>+<kbd>ALT<\/kbd>+<kbd>M<\/kbd><\/span><\/span>)",
     "description":"A step in the basic usage instructions"
   },
   "options_page__pretty_cool":{
@@ -116,31 +116,31 @@
     "description":"A section title"
   },
   "options_page__resources_cheatsheet_link":{
-    "message":"If you're new to Markdown, the <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/wiki\/Markdown-Here-Cheatsheet\" target=\"_blank\">Markdown Here Cheatsheet<\/a> will make you a prostar."
+    "message":"If you're new to Sitthefuckdown, the <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/wiki\/Sitthefuckdown-Here-Cheatsheet\" target=\"_blank\">Sitthefuckdown Here Cheatsheet<\/a> will make you a prostar."
   },
   "options_page__advanced_usage":{
-    "message":"For lots more info and advanced usage, see the <a href=\"https:\/\/github.com\/adam-p\/markdown-here\" target=\"_blank\">Markdown Here project page<\/a>. You should also explore the options below."
+    "message":"For lots more info and advanced usage, see the <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\" target=\"_blank\">Sitthefuckdown Here project page<\/a>. You should also explore the options below."
   },
   "options_page__ggroup":{
-    "message":"Ask a question, start a discussion, or just say hi in the <a href=\"https:\/\/groups.google.com\/forum\/?fromgroups=#!forum\/markdown-here\" target=\"_blank\">markdown-here Google Group<\/a>."
+    "message":"Ask a question, start a discussion, or just say hi in the <a href=\"https:\/\/groups.google.com\/forum\/?fromgroups=#!forum\/sitthefuckdown-here\" target=\"_blank\">sitthefuckdown-here Google Group<\/a>."
   },
   "options_page__mdh_wiki":{
-    "message":"Visit the <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/wiki\" target=\"_blank\">Markdown Here wiki<\/a> for info about <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/wiki\/Compatibility\" target=\"_blank\">where else MDH works<\/a> and more <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/wiki\/Tips-and-Tricks\" target=\"_blank\">tips and tricks<\/a>."
+    "message":"Visit the <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/wiki\" target=\"_blank\">Sitthefuckdown Here wiki<\/a> for info about <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/wiki\/Compatibility\" target=\"_blank\">where else MDH works<\/a> and more <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/wiki\/Tips-and-Tricks\" target=\"_blank\">tips and tricks<\/a>."
   },
   "options_page__next_steps":{
-    "message":"If you're interested in what the future holds for Markdown Here, check out the <a href=\"https:\/\/github.com\/adam-p\/markdown-here#next-steps\" target=\"_blank\">Next Steps section<\/a> of the README."
+    "message":"If you're interested in what the future holds for Sitthefuckdown Here, check out the <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here#next-steps\" target=\"_blank\">Next Steps section<\/a> of the README."
   },
   "options_page__donate_plea_1":{
-    "message":"Once you decide Markdown Here is pretty sweet, please help me to buy some flowers for my wife so she's not too upset about how much time I spend working on it. <strong>Thank you!<\/strong>"
+    "message":"Once you decide Sitthefuckdown Here is pretty sweet, please help me to buy some flowers for my wife so she's not too upset about how much time I spend working on it. <strong>Thank you!<\/strong>"
   },
   "options_page__donate_plea_2":{
-    "message":"<strong>Help make Markdown Here better!<\/strong>"
+    "message":"<strong>Help make Sitthefuckdown Here better!<\/strong>"
   },
   "options_page__donate_plea_3":{
-    "message":"<strong>Help support the development of Markdown Here!<\/strong>"
+    "message":"<strong>Help support the development of Sitthefuckdown Here!<\/strong>"
   },
   "options_page__donate_plea_4":{
-    "message":"You know what makes it easier to keep Markdown Here working on Chrome, Firefox, Thunderbird, Postbox, Safari, Opera, Gmail, Yahoo, Hotmail, Blogger, Evernote, etc.? <strong>Coffee!<\/strong>"
+    "message":"You know what makes it easier to keep Sitthefuckdown Here working on Chrome, Firefox, Thunderbird, Postbox, Safari, Opera, Gmail, Yahoo, Hotmail, Blogger, Evernote, etc.? <strong>Coffee!<\/strong>"
   },
   "options_page__other_donation_options":{
     "message":"Other donation options",
@@ -164,11 +164,11 @@
   },
   "options_page__preview_title":{
     "message":"Preview",
-    "description":"section title for the Markdown preview section"
+    "description":"section title for the Sitthefuckdown preview section"
   },
-  "options_page__markdown_toggle_button_text":{
-    "message":"Markdown Toggle",
-    "description":"button text for Markdown Toggle button"
+  "options_page__sitthefuckdown_toggle_button_text":{
+    "message":"Sitthefuckdown Toggle",
+    "description":"button text for Sitthefuckdown Toggle button"
   },
   "options_page__notes_title":{
     "message":"Notes",
@@ -286,23 +286,23 @@
     "message":"Currently only supported in the Gmail web interface and Thunderbird (and Postbox and Icedove)."
   },
   "options_page__forgot_to_render_2":{
-    "message":"When you send an email, this checks the content to see if it looks like you wrote it in Markdown, but forgot to render it (i.e., click \"Markdown Toggle\") before sending. This may need to be disabled if it interferes with your ability to send email."
+    "message":"When you send an email, this checks the content to see if it looks like you wrote it in Sitthefuckdown, but forgot to render it (i.e., click \"Sitthefuckdown Toggle\") before sending. This may need to be disabled if it interferes with your ability to send email."
   },
   "options_page__forgot_to_render_3":{
-    "message":"If you find yourself disabling this, <em>please<\/em> let me know why and how it could be better. Create <a href=\"https:\/\/groups.google.com\/forum\/#!forum\/markdown-here\" target=\"_blank\">a post on the \"markdown-here\" Google Group<\/a> or <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/issues\" target=\"_blank\">an issue in the Github project<\/a>. Thanks."
+    "message":"If you find yourself disabling this, <em>please<\/em> let me know why and how it could be better. Create <a href=\"https:\/\/groups.google.com\/forum\/#!forum\/sitthefuckdown-here\" target=\"_blank\">a post on the \"sitthefuckdown-here\" Google Group<\/a> or <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/issues\" target=\"_blank\">an issue in the Github project<\/a>. Thanks."
   },
   "options_page__contributing_title":{
     "message":"Contributing",
     "description":"A section title"
   },
   "options_page__contributing_1":{
-    "message":"<strong>If you have ever put a code block into an email, then you can help make Markdown Here better.<\/strong> <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/blob\/master\/CONTRIBUTING.md\" target=\"_blank\">CONTRIBUTING.md<\/a>"
+    "message":"<strong>If you have ever put a code block into an email, then you can help make Sitthefuckdown Here better.<\/strong> <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/blob\/master\/CONTRIBUTING.md\" target=\"_blank\">CONTRIBUTING.md<\/a>"
   },
   "options_page__contributing_2":{
-    "message":"Help make Markdown Here available in your language. <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/blob\/master\/CONTRIBUTING.md#translation\" target=\"_blank\">Translations are welcome.<\/a>"
+    "message":"Help make Sitthefuckdown Here available in your language. <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/blob\/master\/CONTRIBUTING.md#translation\" target=\"_blank\">Translations are welcome.<\/a>"
   },
   "options_page__footer_1":{
-    "message":"<em>Markdown Here<\/em> is open source. To ask questions, report bugs, request features, or contribute, visit the <a target=\"_blank\" href=\"https:\/\/github.com\/adam-p\/markdown-here\">Github project page<\/a> or the <a target=\"_blank\" href=\"https:\/\/groups.google.com\/forum\/?fromgroups=#!forum\/markdown-here\">\"markdown-here\" Google Group<\/a>.",
+    "message":"<em>Sitthefuckdown Here<\/em> is open source. To ask questions, report bugs, request features, or contribute, visit the <a target=\"_blank\" href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\">Github project page<\/a> or the <a target=\"_blank\" href=\"https:\/\/groups.google.com\/forum\/?fromgroups=#!forum\/sitthefuckdown-here\">\"sitthefuckdown-here\" Google Group<\/a>.",
     "description":"part of the page footer text"
   },
   "options_page__footer_2":{
@@ -313,9 +313,9 @@
     "message":"Changes saved",
     "description":"message that shows when user changes have been saved"
   },
-  "options_page__preview_markdown":{
-    "message":"```javascript<br>\nfunction syntaxHighlighting() {<br>\n&nbsp; var n = 33;<br>\n&nbsp; var s = \"hello, こんにちは\";<br>\n&nbsp; console.log(s);<br>\n}<br>\n```<br>\n<br>\n* plain<br>\n* *emphasis*<br>\n&nbsp; * **strong emphasis**<br>\n&nbsp; &nbsp; * ~~strikethrough~~<br>\n* `inline code`<br>\n<br>\n1. Numbered list<br>\n&nbsp;&nbsp;&nbsp;1. Numbered sub-list<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Numbered sub-sub-list<br>\n2. [Link](https:\/\/www.google.com)<br>\n<br>\n<br>\nAn image: ![Markdown Here logo](https:\/\/raw.githubusercontent.com\/adam-p\/markdown-here\/master\/src\/common\/images\/icon24.png)\n<br>\n<br>\n> Block quote.&nbsp; <br>\n> *With* **some** `markdown`.<br>\n<br>\nIf **TeX Math** support is enabled, this is the quadratic equation:&nbsp;<br>\n$$-b \\pm \\sqrt{b^2 - 4ac} \\over 2a$$<br>\n<br>\n# Header 1<br>\n## Header 2<br>\n### Header 3<br>\n#### Header 4<br>\n##### Header 5<br>\n###### Header 6<br>\n&nbsp; <br>\n| Tables        | Are           | Cool  |<br>\n| ------------- |:-------------:| -----:|<br>\n| column 3 is   | right-aligned | $$1600 |<br>\n| column 2 is   | centered      |   $$12 |<br>\n| zebra stripes | are neat      |    $$1 |<br>\n<br>\nHere's a horizontal rule:<br>\n<br>\n---<br>\n<br>\n```<br>\ncode block<br>\nwith no highlighting<br>\n```<br>\n<br>\n",
-    "description":"This doesn't need to be translated, unless you want to make it more relevant to your language. The raw Markdown used for previewing user styling changes. Also shows users what can be done with Markdown. Please note that the double dollar signs ($$) are needed to make a single dollar sign in the application."
+  "options_page__preview_sitthefuckdown":{
+    "message":"```javascript<br>\nfunction syntaxHighlighting() {<br>\n&nbsp; var n = 33;<br>\n&nbsp; var s = \"hello, こんにちは\";<br>\n&nbsp; console.log(s);<br>\n}<br>\n```<br>\n<br>\n* plain<br>\n* *emphasis*<br>\n&nbsp; * **strong emphasis**<br>\n&nbsp; &nbsp; * ~~strikethrough~~<br>\n* `inline code`<br>\n<br>\n1. Numbered list<br>\n&nbsp;&nbsp;&nbsp;1. Numbered sub-list<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Numbered sub-sub-list<br>\n2. [Link](https:\/\/www.google.com)<br>\n<br>\n<br>\nAn image: ![Sitthefuckdown Here logo](https:\/\/raw.githubusercontent.com\/adam-p\/sitthefuckdown-here\/master\/src\/common\/images\/icon24.png)\n<br>\n<br>\n> Block quote.&nbsp; <br>\n> *With* **some** `sitthefuckdown`.<br>\n<br>\nIf **TeX Math** support is enabled, this is the quadratic equation:&nbsp;<br>\n$$-b \\pm \\sqrt{b^2 - 4ac} \\over 2a$$<br>\n<br>\n# Header 1<br>\n## Header 2<br>\n### Header 3<br>\n#### Header 4<br>\n##### Header 5<br>\n###### Header 6<br>\n&nbsp; <br>\n| Tables        | Are           | Cool  |<br>\n| ------------- |:-------------:| -----:|<br>\n| column 3 is   | right-aligned | $$1600 |<br>\n| column 2 is   | centered      |   $$12 |<br>\n| zebra stripes | are neat      |    $$1 |<br>\n<br>\nHere's a horizontal rule:<br>\n<br>\n---<br>\n<br>\n```<br>\ncode block<br>\nwith no highlighting<br>\n```<br>\n<br>\n",
+    "description":"This doesn't need to be translated, unless you want to make it more relevant to your language. The raw Sitthefuckdown used for previewing user styling changes. Also shows users what can be done with Sitthefuckdown. Please note that the double dollar signs ($$) are needed to make a single dollar sign in the application."
   },
   "currently_in_use":{
     "message":"Currently in use",
@@ -327,16 +327,16 @@
   },
   "options_page__header_anchors_enabled_label":{
     "message":"<b>Enable automatic header anchors.<\/b>",
-    "description":"Label for the checkbox that enables the automatic header anchors feature. This means that an 'anchor' is created at every heading (H1, H2, etc.) in the user's Markdown. The user can then create links that will jump to these anchors, like in the table of contents of a document."
+    "description":"Label for the checkbox that enables the automatic header anchors feature. This means that an 'anchor' is created at every heading (H1, H2, etc.) in the user's Sitthefuckdown. The user can then create links that will jump to these anchors, like in the table of contents of a document."
   },
   "options_page__header_anchors_enabled_1":{
-    "message":"This is great if you want to put a table of contents or other internal links into your content. <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/wiki\/Tips-and-Tricks#wiki-header-anchors\" target=\"_blank\">Learn about how to use it in the MDH wiki.<\/a>"
+    "message":"This is great if you want to put a table of contents or other internal links into your content. <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/wiki\/Tips-and-Tricks#wiki-header-anchors\" target=\"_blank\">Learn about how to use it in the MDH wiki.<\/a>"
   },
   "options_page__header_anchors_enabled_2":{
-    "message":"It's disabled by default because it <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/issues\/155\" target=\"_blank\">creates visual noise in Thunderbird<\/a>. (And most people probably won't use the feature.)"
+    "message":"It's disabled by default because it <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/issues\/155\" target=\"_blank\">creates visual noise in Thunderbird<\/a>. (And most people probably won't use the feature.)"
   },
   "options_page__gfm_line_breaks_enabled_label":{
     "message":"<b>Enable GFM line breaks.<\/b>",
-    "description":"Label for the checkbox that enables the support of 'Github-flavored Markdown' line breaks."
+    "description":"Label for the checkbox that enables the support of 'Github-flavored Sitthefuckdown' line breaks."
   }
 }

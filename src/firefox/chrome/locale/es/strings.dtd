@@ -1,7 +1,7 @@
-<!ENTITY app_name "Markdown Here">
-<!ENTITY context_menu_item "Markdown Toggle">
+<!ENTITY app_name "Sitthefuckdown Here">
+<!ENTITY context_menu_item "Sitthefuckdown Toggle">
 <!ENTITY forgot_to_render_back_button "Atrás">
 <!ENTITY forgot_to_render_send_button "Enviar">
 <!ENTITY toggle_button_text "MD Toggle">
-<!ENTITY toggle_button_tooltip "Click para activar el renderizado Markdown">
-<!ENTITY toggle_button_tooltip_disabled "El campo seleccionado no es válido para el renderizado Markdown">
+<!ENTITY toggle_button_tooltip "Click para activar el renderizado Sitthefuckdown">
+<!ENTITY toggle_button_tooltip_disabled "El campo seleccionado no es válido para el renderizado Sitthefuckdown">

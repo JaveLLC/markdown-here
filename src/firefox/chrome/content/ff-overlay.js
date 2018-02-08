@@ -12,13 +12,13 @@
  * rendering services.
  */
 
-var markdown_here = {
+var sitthefuckdown_here = {
 
   imports: {},
 
   // Components.utils is somewhat more performant than mozIJSSubScriptLoader,
   // but it doesn't expose the global `window` to the code, which introduces
-  // tons of headaches (see https://github.com/adam-p/markdown-here/issues/141).
+  // tons of headaches (see https://github.com/adam-p/sitthefuckdown-here/issues/141).
   // The correct way to deal with that is probably to pass `window` into every
   // single call, but that seems onerous.
   // For details on the difference, see:
@@ -31,7 +31,7 @@ var markdown_here = {
   onMenuItemCommand: function(e) {
     var mdReturn, focusedElem, self = this;
 
-    focusedElem = markdown_here.imports.markdownHere.findFocusedElem(window.document);
+    focusedElem = sitthefuckdown_here.imports.sitthefuckdownHere.findFocusedElem(window.document);
     if (!focusedElem) {
       // Shouldn't happen. But if it does, just silently abort.
       return;
@@ -43,27 +43,27 @@ var markdown_here = {
       // Are we rich-editing?
       /*jshint newcap:false*/
       if (window.GetCurrentEditorType().indexOf('html') < 0) {
-        this.alert(markdown_here.imports.Utils.getMessage('plain_text_compose'));
+        this.alert(sitthefuckdown_here.imports.Utils.getMessage('plain_text_compose'));
         return;
       }
 
       // The focus might not be in the compose box
-      if (!markdown_here.imports.markdownHere.elementCanBeRendered(focusedElem)) {
-        this.alert(markdown_here.imports.Utils.getMessage('cursor_into_compose'));
+      if (!sitthefuckdown_here.imports.sitthefuckdownHere.elementCanBeRendered(focusedElem)) {
+        this.alert(sitthefuckdown_here.imports.Utils.getMessage('cursor_into_compose'));
         return;
       }
     }
     else { // Firefox
-      if (!markdown_here.imports.markdownHere.elementCanBeRendered(focusedElem)) {
-        this.alert(markdown_here.imports.Utils.getMessage('invalid_field'));
+      if (!sitthefuckdown_here.imports.sitthefuckdownHere.elementCanBeRendered(focusedElem)) {
+        this.alert(sitthefuckdown_here.imports.Utils.getMessage('invalid_field'));
         return;
       }
     }
 
-    mdReturn = markdown_here.imports.markdownHere(
+    mdReturn = sitthefuckdown_here.imports.sitthefuckdownHere(
                 focusedElem.ownerDocument,
                 function(elem, range, callback) {
-                  self.markdownRender(elem, range, callback);
+                  self.sitthefuckdownRender(elem, range, callback);
                 },
                 this.log);
 
@@ -75,7 +75,7 @@ var markdown_here = {
   },
 
   onToolbarButtonCommand: function(e) {
-    markdown_here.onMenuItemCommand(e);
+    sitthefuckdown_here.onMenuItemCommand(e);
   },
 
   // NOTE: Thunderbird seems to reuse compose windows, so this will only get
@@ -90,24 +90,24 @@ var markdown_here = {
     var contextMenu;
 
     // scriptLoader loads stuff into `window`.
-    markdown_here.scriptLoader.loadSubScript('resource://markdown_here_common/utils.js');
-    markdown_here.imports.Utils = window.Utils;
-    markdown_here.scriptLoader.loadSubScript('resource://markdown_here_common/common-logic.js');
-    markdown_here.imports.CommonLogic = window.CommonLogic;
-    markdown_here.scriptLoader.loadSubScript('resource://markdown_here_common/jsHtmlToText.js');
-    markdown_here.imports.htmlToText = window.htmlToText;
-    markdown_here.scriptLoader.loadSubScript('resource://markdown_here_common/marked.js');
-    markdown_here.imports.marked = window.marked;
-    markdown_here.scriptLoader.loadSubScript('resource://markdown_here_common/markdown-here.js');
-    markdown_here.imports.markdownHere = window.markdownHere;
-    markdown_here.scriptLoader.loadSubScript('resource://markdown_here_common/mdh-html-to-text.js');
-    markdown_here.imports.MdhHtmlToText = window.MdhHtmlToText;
-    markdown_here.scriptLoader.loadSubScript('resource://markdown_here_common/markdown-render.js');
-    markdown_here.imports.MarkdownRender = window.MarkdownRender;
-    markdown_here.scriptLoader.loadSubScript('resource://markdown_here_common/options-store.js');
-    markdown_here.imports.OptionsStore = OptionsStore;
-    markdown_here.scriptLoader.loadSubScript('resource://markdown_here_common/highlightjs/highlight.js');
-    markdown_here.imports.hljs = window.hljs;
+    sitthefuckdown_here.scriptLoader.loadSubScript('resource://sitthefuckdown_here_common/utils.js');
+    sitthefuckdown_here.imports.Utils = window.Utils;
+    sitthefuckdown_here.scriptLoader.loadSubScript('resource://sitthefuckdown_here_common/common-logic.js');
+    sitthefuckdown_here.imports.CommonLogic = window.CommonLogic;
+    sitthefuckdown_here.scriptLoader.loadSubScript('resource://sitthefuckdown_here_common/jsHtmlToText.js');
+    sitthefuckdown_here.imports.htmlToText = window.htmlToText;
+    sitthefuckdown_here.scriptLoader.loadSubScript('resource://sitthefuckdown_here_common/marked.js');
+    sitthefuckdown_here.imports.marked = window.marked;
+    sitthefuckdown_here.scriptLoader.loadSubScript('resource://sitthefuckdown_here_common/sitthefuckdown-here.js');
+    sitthefuckdown_here.imports.sitthefuckdownHere = window.sitthefuckdownHere;
+    sitthefuckdown_here.scriptLoader.loadSubScript('resource://sitthefuckdown_here_common/mdh-html-to-text.js');
+    sitthefuckdown_here.imports.MdhHtmlToText = window.MdhHtmlToText;
+    sitthefuckdown_here.scriptLoader.loadSubScript('resource://sitthefuckdown_here_common/sitthefuckdown-render.js');
+    sitthefuckdown_here.imports.SitthefuckdownRender = window.SitthefuckdownRender;
+    sitthefuckdown_here.scriptLoader.loadSubScript('resource://sitthefuckdown_here_common/options-store.js');
+    sitthefuckdown_here.imports.OptionsStore = OptionsStore;
+    sitthefuckdown_here.scriptLoader.loadSubScript('resource://sitthefuckdown_here_common/highlightjs/highlight.js');
+    sitthefuckdown_here.imports.hljs = window.hljs;
 
     // initialization code
     this.initialized = true;
@@ -115,13 +115,13 @@ var markdown_here = {
     contextMenu = document.getElementById('contentAreaContextMenu');
     if (!contextMenu) contextMenu = document.getElementById('msgComposeContext');
     contextMenu.addEventListener('popupshowing', function (e) {
-      markdown_here.contextMenuShowing(e);
+      sitthefuckdown_here.contextMenuShowing(e);
     }, false);
 
     this.setupButton();
 
     // Some setup steps are dependent on options
-    markdown_here.imports.OptionsStore.get(function(prefs) {
+    sitthefuckdown_here.imports.OptionsStore.get(function(prefs) {
 
       // Register a hotkey listener
 
@@ -130,7 +130,7 @@ var markdown_here = {
             event.ctrlKey === prefs.hotkey.ctrlKey &&
             event.altKey === prefs.hotkey.altKey &&
             event.which === prefs.hotkey.key.toUpperCase().charCodeAt(0)) {
-          markdown_here.onMenuItemCommand();
+          sitthefuckdown_here.onMenuItemCommand();
           event.preventDefault();
           return false;
         }
@@ -167,28 +167,28 @@ var markdown_here = {
             return;
           }
 
-          var plaintext = new markdown_here.imports.MdhHtmlToText.MdhHtmlToText(
+          var plaintext = new sitthefuckdown_here.imports.MdhHtmlToText.MdhHtmlToText(
                             window.GetCurrentEditor().document.body,
                             null,
                             true).get();
 
-          if (!markdown_here.imports.CommonLogic.probablyWritingMarkdown(
+          if (!sitthefuckdown_here.imports.CommonLogic.probablyWritingSitthefuckdown(
                 plaintext,
-                markdown_here.imports.htmlToText,
-                markdown_here.imports.marked)) {
+                sitthefuckdown_here.imports.htmlToText,
+                sitthefuckdown_here.imports.marked)) {
             return;
           }
 
           var promptParams = {
             inn:{
-              promptInfo: markdown_here.imports.Utils.getMessage('forgot_to_render_prompt_info'),
-              promptQuestion: markdown_here.imports.Utils.getMessage('forgot_to_render_prompt_question'),
-              promptBackButton: markdown_here.imports.Utils.getMessage('forgot_to_render_back_button'),
-              promptSendButton: markdown_here.imports.Utils.getMessage('forgot_to_render_send_button') },
+              promptInfo: sitthefuckdown_here.imports.Utils.getMessage('forgot_to_render_prompt_info'),
+              promptQuestion: sitthefuckdown_here.imports.Utils.getMessage('forgot_to_render_prompt_question'),
+              promptBackButton: sitthefuckdown_here.imports.Utils.getMessage('forgot_to_render_back_button'),
+              promptSendButton: sitthefuckdown_here.imports.Utils.getMessage('forgot_to_render_send_button') },
             out:null
           };
           window.openDialog(
-            "chrome://markdown_here/content/confirm-prompt.xul",
+            "chrome://sitthefuckdown_here/content/confirm-prompt.xul",
             "",
             "chrome, dialog, modal, centerscreen",
             promptParams).focus();
@@ -216,7 +216,7 @@ var markdown_here = {
       showItem = true;
     }
     else { // Firefox
-      focusedElem = markdown_here.imports.markdownHere.findFocusedElem(window.document);
+      focusedElem = sitthefuckdown_here.imports.sitthefuckdownHere.findFocusedElem(window.document);
 
       if (!focusedElem) {
         showItem = false;
@@ -230,36 +230,36 @@ var markdown_here = {
         showItem = true;
       }
       else {
-        showItem = markdown_here.imports.markdownHere.elementCanBeRendered(focusedElem);
+        showItem = sitthefuckdown_here.imports.sitthefuckdownHere.elementCanBeRendered(focusedElem);
       }
     }
 
-    document.getElementById('context-markdown_here').hidden = !showItem;
+    document.getElementById('context-sitthefuckdown_here').hidden = !showItem;
   },
 
   log: function(msg) {
-    markdown_here.imports.Utils.consoleLog(msg);
+    sitthefuckdown_here.imports.Utils.consoleLog(msg);
   },
 
   alert: function(msg) {
     var prompts = Components.classes["@mozilla.org/embedcomp/prompt-service;1"]
                             .getService(Components.interfaces.nsIPromptService);
-    prompts.alert(null, 'Markdown Here', msg);
+    prompts.alert(null, 'Sitthefuckdown Here', msg);
   },
 
   // The rendering service provided to the content script.
-  markdownRender: function(elem, range, callback) {
-    var mdhHtmlToText = new markdown_here.imports.MdhHtmlToText.MdhHtmlToText(elem, range);
+  sitthefuckdownRender: function(elem, range, callback) {
+    var mdhHtmlToText = new sitthefuckdown_here.imports.MdhHtmlToText.MdhHtmlToText(elem, range);
 
-    markdown_here.imports.OptionsStore.get(function(prefs) {
-      var renderedMarkdown = markdown_here.imports.MarkdownRender.markdownRender(
+    sitthefuckdown_here.imports.OptionsStore.get(function(prefs) {
+      var renderedSitthefuckdown = sitthefuckdown_here.imports.SitthefuckdownRender.sitthefuckdownRender(
         mdhHtmlToText.get(),
         prefs,
-        markdown_here.imports.marked,
-        markdown_here.imports.hljs);
-      renderedMarkdown = mdhHtmlToText.postprocess(renderedMarkdown);
+        sitthefuckdown_here.imports.marked,
+        sitthefuckdown_here.imports.hljs);
+      renderedSitthefuckdown = mdhHtmlToText.postprocess(renderedSitthefuckdown);
 
-      callback(renderedMarkdown, prefs['main-css'] + prefs['syntax-css']);
+      callback(renderedSitthefuckdown, prefs['main-css'] + prefs['syntax-css']);
     });
   },
 
@@ -274,18 +274,18 @@ var markdown_here = {
       var btn, tooltipString;
 
       // Page action button
-      btn = document.getElementById('pageAction-markdown_here');
+      btn = document.getElementById('pageAction-sitthefuckdown_here');
       if (btn) {
         btn.setAttribute('collapsed', !show);
       }
 
       // Toolbar button
-      btn = document.getElementById('toolbarButton-markdown_here');
+      btn = document.getElementById('toolbarButton-sitthefuckdown_here');
       if (btn) {
         if (show) {
           btn.removeAttribute('disabled');
 
-          tooltipString = markdown_here.imports.Utils.getMessage('toggle_button_tooltip');
+          tooltipString = sitthefuckdown_here.imports.Utils.getMessage('toggle_button_tooltip');
           if (tooltipString) {
             btn.setAttribute('tooltiptext', tooltipString);
           }
@@ -293,7 +293,7 @@ var markdown_here = {
         else {
           btn.setAttribute('disabled', 'true');
 
-          tooltipString = markdown_here.imports.Utils.getMessage('toggle_button_tooltip_disabled');
+          tooltipString = sitthefuckdown_here.imports.Utils.getMessage('toggle_button_tooltip_disabled');
           if (tooltipString) {
             btn.setAttribute('tooltiptext', tooltipString);
           }
@@ -318,7 +318,7 @@ var markdown_here = {
         // arguments.
         elem.ownerDocument.addEventListener('focus', focusChange, true);
 
-        renderable = markdown_here.imports.markdownHere.elementCanBeRendered(elem);
+        renderable = sitthefuckdown_here.imports.sitthefuckdownHere.elementCanBeRendered(elem);
       }
 
       if (renderable !== lastRenderable) {
@@ -328,7 +328,7 @@ var markdown_here = {
     }
 
     // When the focus in the page changes, check if the newly focused element is
-    // a valid Markdown Toggle target.
+    // a valid Sitthefuckdown Toggle target.
     function focusChange(event) {
       setToggleButtonVisibility(event.target);
     }
@@ -340,7 +340,7 @@ var markdown_here = {
     // because Mozilla's automatic extension review prefers when you pass the
     // former to `setInterval()`.
     var intervalCheck = function() {
-      var focusedElem = markdown_here.imports.markdownHere.findFocusedElem(window.document);
+      var focusedElem = sitthefuckdown_here.imports.sitthefuckdownHere.findFocusedElem(window.document);
       if (!focusedElem) {
         return;
       }
@@ -348,16 +348,16 @@ var markdown_here = {
       setToggleButtonVisibility(focusedElem);
 
       if (forgotToRenderIntervalCheckPrefs === null) {
-        markdown_here.imports.OptionsStore.get(function(prefs) {
+        sitthefuckdown_here.imports.OptionsStore.get(function(prefs) {
           forgotToRenderIntervalCheckPrefs = prefs;
         });
       }
       else {
-        markdown_here.imports.CommonLogic.forgotToRenderIntervalCheck(
+        sitthefuckdown_here.imports.CommonLogic.forgotToRenderIntervalCheck(
           focusedElem,
-          markdown_here.imports.markdownHere,
-          markdown_here.imports.MdhHtmlToText,
-          markdown_here.imports.marked,
+          sitthefuckdown_here.imports.sitthefuckdownHere,
+          sitthefuckdown_here.imports.MdhHtmlToText,
+          sitthefuckdown_here.imports.marked,
           forgotToRenderIntervalCheckPrefs);
       }
     };
@@ -367,28 +367,28 @@ var markdown_here = {
   _showUpgradeNotificationInterval: null,
 
   showUpgradeNotification: function(optionsURL, openTabFn) {
-    markdown_here.imports.CommonLogic.getUpgradeNotification(optionsURL, function(html) {
+    sitthefuckdown_here.imports.CommonLogic.getUpgradeNotification(optionsURL, function(html) {
       var addUpgradeNotificationToTab = function(tabbrowser) {
-        if (!tabbrowser.contentDocument.querySelector('#markdown-here-upgrade-notification-content')) {
+        if (!tabbrowser.contentDocument.querySelector('#sitthefuckdown-here-upgrade-notification-content')) {
           var elem = tabbrowser.contentDocument.createElement('div');
           tabbrowser.contentDocument.body.appendChild(elem);
-          markdown_here.imports.Utils.saferSetOuterHTML(elem, html);
+          sitthefuckdown_here.imports.Utils.saferSetOuterHTML(elem, html);
 
             // Setting the outer HTML wrecks our reference to the element, so get it again.
-          elem = tabbrowser.contentDocument.querySelector('#markdown-here-upgrade-notification-content');
+          elem = tabbrowser.contentDocument.querySelector('#sitthefuckdown-here-upgrade-notification-content');
 
           // Add click handlers so that we can clear the notification.
-          var optionsLink = tabbrowser.contentDocument.querySelector('#markdown-here-upgrade-notification-link');
+          var optionsLink = tabbrowser.contentDocument.querySelector('#sitthefuckdown-here-upgrade-notification-link');
           optionsLink.addEventListener('click', function(event) {
             event.preventDefault();
-            markdown_here._hideUpgradeNotification();
+            sitthefuckdown_here._hideUpgradeNotification();
             openTabFn(optionsURL);
           });
 
-          var closeLink = tabbrowser.contentDocument.querySelector('#markdown-here-upgrade-notification-close');
+          var closeLink = tabbrowser.contentDocument.querySelector('#sitthefuckdown-here-upgrade-notification-close');
           closeLink.addEventListener('click', function(event) {
             event.preventDefault();
-            markdown_here._hideUpgradeNotification();
+            sitthefuckdown_here._hideUpgradeNotification();
           });
         }
       };
@@ -397,30 +397,30 @@ var markdown_here = {
       // This is because there might not actually be any tabs when we first
       // start.
       var showUpgradeNotificationsAgain = function() {
-        markdown_here._forAllTabsDo(addUpgradeNotificationToTab);
+        sitthefuckdown_here._forAllTabsDo(addUpgradeNotificationToTab);
       };
 
-      if (markdown_here._showUpgradeNotificationInterval === null) {
-        markdown_here._showUpgradeNotificationInterval = setInterval(showUpgradeNotificationsAgain, 5000);
+      if (sitthefuckdown_here._showUpgradeNotificationInterval === null) {
+        sitthefuckdown_here._showUpgradeNotificationInterval = setInterval(showUpgradeNotificationsAgain, 5000);
       }
     });
   },
 
   _hideUpgradeNotification: function() {
-    if (markdown_here._showUpgradeNotificationInterval !== null) {
-      clearInterval(markdown_here._showUpgradeNotificationInterval);
-      markdown_here._showUpgradeNotificationInterval = null;
+    if (sitthefuckdown_here._showUpgradeNotificationInterval !== null) {
+      clearInterval(sitthefuckdown_here._showUpgradeNotificationInterval);
+      sitthefuckdown_here._showUpgradeNotificationInterval = null;
     }
 
     function removeNotificationFromTab(tabbrowser) {
       // Check if this tab has the notification and remove it.
-      var notification = tabbrowser.contentDocument.querySelector('#markdown-here-upgrade-notification-content');
+      var notification = tabbrowser.contentDocument.querySelector('#sitthefuckdown-here-upgrade-notification-content');
       if (notification) {
         tabbrowser.contentDocument.body.removeChild(notification);
       }
     }
 
-    markdown_here._forAllTabsDo(removeNotificationFromTab);
+    sitthefuckdown_here._forAllTabsDo(removeNotificationFromTab);
   },
 
   // TODO: move to a Mozilla/Firefox-specifc utils module.
@@ -476,7 +476,7 @@ var markdown_here = {
 
 window.addEventListener('load', function () {
   var delayedLoad = function() {
-    markdown_here.onLoad();
+    sitthefuckdown_here.onLoad();
   };
 
   // In the interest of improved browser load performace, call our onLoad after a tick.

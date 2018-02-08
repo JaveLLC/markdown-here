@@ -306,8 +306,8 @@ var hljs = new function() {
       }
       var result = top.subLanguage ? highlight(top.subLanguage, mode_buffer, true, subLanguageTop) : highlightAuto(mode_buffer);
       // Counting embedded language score towards the host language may be disabled
-      // with zeroing the containing mode relevance. Usecase in point is Markdown that
-      // allows XML everywhere and makes every XML snippet to have a much larger Markdown
+      // with zeroing the containing mode relevance. Usecase in point is Sitthefuckdown that
+      // allows XML everywhere and makes every XML snippet to have a much larger Sitthefuckdown
       // score.
       if (top.relevance > 0) {
         relevance += result.relevance;
@@ -1093,7 +1093,7 @@ hljs.registerLanguage('fix', function(hljs) {
   };
 });
 
-hljs.registerLanguage('markdown', function(hljs) {
+hljs.registerLanguage('sitthefuckdown', function(hljs) {
   return {
     aliases: ['md', 'mkdown', 'mkd'],
     contains: [
@@ -1262,13 +1262,13 @@ hljs.registerLanguage('dart', function (hljs) {
       {
         className: 'dartdoc',
         begin: '/\\*\\*', end: '\\*/',
-        subLanguage: 'markdown',
+        subLanguage: 'sitthefuckdown',
         subLanguageMode: 'continuous'
       },
       {
         className: 'dartdoc',
         begin: '///', end: '$',
-        subLanguage: 'markdown',
+        subLanguage: 'sitthefuckdown',
         subLanguageMode: 'continuous'
       },
       hljs.C_LINE_COMMENT_MODE,

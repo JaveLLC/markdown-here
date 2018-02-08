@@ -6,7 +6,7 @@
 "use strict";
 /* jshint curly:true, noempty:true, newcap:true, eqeqeq:true, eqnull:true, es5:true, undef:true, devel:true, browser:true, node:true, evil:false, latedef:false, nonew:true, trailing:false, immed:false, smarttabs:true, expr:true */
 /* global describe, expect, it, before, beforeEach, after, afterEach */
-/* global _, $, markdownRender, htmlToText, marked, hljs, Utils */
+/* global _, $, sitthefuckdownRender, htmlToText, marked, hljs, Utils */
 
 
 // This function wraps `htmlString` in a `<div>` to make life easier for us.
@@ -193,7 +193,7 @@ describe('Utils', function() {
       expect(Utils.getDocumentFragmentHTML(makeFragment(htmlArray))).to.equal(expectedHTML);
     });
 
-    // Test issue #133: https://github.com/adam-p/markdown-here/issues/133
+    // Test issue #133: https://github.com/adam-p/sitthefuckdown-here/issues/133
     // Thunderbird: raw HTML not rendering properly.
     // HTML text nodes were not being escaped properly.
     it('should escape HTML in a text node', function() {
@@ -318,7 +318,7 @@ describe('Utils', function() {
       var elem = document.createElement('button');
       document.body.appendChild(elem);
       elem.addEventListener('click', function(event) {
-        expect(event[Utils.MARKDOWN_HERE_EVENT]).to.be.true;
+        expect(event[Utils.SITTHEFUCKDOWN_HERE_EVENT]).to.be.true;
         document.body.removeChild(elem);
         done();
       });

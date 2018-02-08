@@ -4,7 +4,7 @@
  */
 
 /*
-This module encapsulates Markdown Here's HTML-to-plaintext functionality.
+This module encapsulates Sitthefuckdown Here's HTML-to-plaintext functionality.
 */
 
 
@@ -21,8 +21,8 @@ if (typeof(htmlToText) === 'undefined' &&
     typeof(Components.utils) !== 'undefined') {
   var scriptLoader = Components.classes["@mozilla.org/moz/jssubscript-loader;1"]
                                .getService(Components.interfaces.mozIJSSubScriptLoader);
-  scriptLoader.loadSubScript('resource://markdown_here_common/jsHtmlToText.js');
-  scriptLoader.loadSubScript('resource://markdown_here_common/utils.js');
+  scriptLoader.loadSubScript('resource://sitthefuckdown_here_common/jsHtmlToText.js');
+  scriptLoader.loadSubScript('resource://sitthefuckdown_here_common/utils.js');
 }
 
 
@@ -33,14 +33,14 @@ the HTML seems suboptimal.
 
 
 /*
-`checkingIfMarkdown` should be true if the caller just wants to know if the
-HTML contains Markdown. It will prevent any alterations that introduce MD that
+`checkingIfSitthefuckdown` should be true if the caller just wants to know if the
+HTML contains Sitthefuckdown. It will prevent any alterations that introduce MD that
 isn't already present.
 */
-function MdhHtmlToText(elem, range, checkingIfMarkdown) {
+function MdhHtmlToText(elem, range, checkingIfSitthefuckdown) {
   this.elem = elem;
   this.range = range;
-  this.checkingIfMarkdown = checkingIfMarkdown;
+  this.checkingIfSitthefuckdown = checkingIfSitthefuckdown;
 
   // NOTE: If we end up really using `range`, we should do this:
   // if (!this.range) { this.range = new Range(); this.range.selectNodeContents(elem); }
@@ -66,7 +66,7 @@ Returns an object that looks like this:
   }]
 }
 
-NOTE: Maybe it would be better to do this stuff in markdown-here.js, where
+NOTE: Maybe it would be better to do this stuff in sitthefuckdown-here.js, where
 we have the DOM available? String-processing the HTML seems suboptimal.
 */
 MdhHtmlToText.prototype._preprocess = function() {
@@ -111,7 +111,7 @@ MdhHtmlToText.prototype._preprocess = function() {
                           /&lt;<a (href="mailto:[^>]+)>([^<]*)<\/a>&gt;/ig,
                           '&lt;&lt;a $1&gt;$2&lt;\/a&gt;&gt;');
 
-  // It's a deviation from Markdown, but we'd like to leave any rendered
+  // It's a deviation from Sitthefuckdown, but we'd like to leave any rendered
   // images already in the email intact. So we'll escape their tags.
   // Note that we can't use excludeTagBlocks because there's no closing tag.
   this.preprocessInfo.html = this.preprocessInfo.html.replace(/<(img[^>]*)>/ig, '&lt;$1&gt;');
@@ -133,15 +133,15 @@ MdhHtmlToText.prototype._preprocess = function() {
         .replace(/<\/p\b[^>]*>/ig, '</div>');
   }
 
-  if (this.checkingIfMarkdown) {
-    // If we're just checking for Markdown, strip out `<code>` blocks so that
+  if (this.checkingIfSitthefuckdown) {
+    // If we're just checking for Sitthefuckdown, strip out `<code>` blocks so that
     // we don't incorrectly detect unrendered MD in them.
     this.preprocessInfo.html = this.preprocessInfo.html.replace(/<code\b.+?<\/code>/ig, '');
   }
   else {
-    // Some tags we can convert to Markdown, but don't do it if we're just
-    // checking for Markdown, otherwise we'll cause false positives.
-    this.preprocessInfo.html = convertHTMLtoMarkdown('a', this.preprocessInfo.html);
+    // Some tags we can convert to Sitthefuckdown, but don't do it if we're just
+    // checking for Sitthefuckdown, otherwise we'll cause false positives.
+    this.preprocessInfo.html = convertHTMLtoSitthefuckdown('a', this.preprocessInfo.html);
   }
 
   // NOTE: Don't use '.' in these regexes and hope to match across newlines. Instead use [\s\S].
@@ -192,14 +192,14 @@ MdhHtmlToText.prototype.get = function() {
 
 
 // Re-insert the excluded content that we removed in preprocessing
-MdhHtmlToText.prototype.postprocess = function(renderedMarkdown) {
+MdhHtmlToText.prototype.postprocess = function(renderedSitthefuckdown) {
   var i;
   for (i = 0; i < this.preprocessInfo.exclusions.length; i++) {
-    renderedMarkdown = renderedMarkdown.replace(this.preprocessInfo.exclusions[i].placeholder,
+    renderedSitthefuckdown = renderedSitthefuckdown.replace(this.preprocessInfo.exclusions[i].placeholder,
                                                 this.preprocessInfo.exclusions[i].content);
   }
 
-  return renderedMarkdown;
+  return renderedSitthefuckdown;
 };
 
 
@@ -271,7 +271,7 @@ MdhHtmlToText.prototype.excludeTagBlocks = function(
           // Not a nested tag. Time to escape.
           // Because we've mangled the opening and closing tags, we need to
           // put around them so that they don't get mashed together with the
-          // preceeding and following Markdown.
+          // preceeding and following Sitthefuckdown.
 
           closeTagLength = ('</'+tagName+'>').length;
 
@@ -279,7 +279,7 @@ MdhHtmlToText.prototype.excludeTagBlocks = function(
           this.preprocessInfo.exclusions.push({
             placeholder: placeholder,
             content:
-              '<div class="markdown-here-exclude">' +
+              '<div class="sitthefuckdown-here-exclude">' +
               (wrapInPara ? '<p>' : '') +
               this.preprocessInfo.html.slice(currentOpenIndex, closeIndex+closeTagLength) +
               (wrapInPara ? '</p>' : '') +
@@ -292,7 +292,7 @@ MdhHtmlToText.prototype.excludeTagBlocks = function(
 
           this.preprocessInfo.html =
             this.preprocessInfo.html.slice(0, currentOpenIndex) +
-            '<br><br><br>' + // three empty lines is "guaranteed" to break a Markdown block (like a bullet list)
+            '<br><br><br>' + // three empty lines is "guaranteed" to break a Sitthefuckdown block (like a bullet list)
             placeholder +
             '<br><br><br>' +
             this.preprocessInfo.html.slice(closeIndex+closeTagLength);
@@ -320,10 +320,10 @@ MdhHtmlToText.prototype.excludeTagBlocks = function(
 
 
 /**
-Converts instances of `tag` in `html` to Markdown and returns the
+Converts instances of `tag` in `html` to Sitthefuckdown and returns the
 resulting HTML.
 */
-function convertHTMLtoMarkdown(tag, html) {
+function convertHTMLtoSitthefuckdown(tag, html) {
   if (tag === 'a') {
     var htmlToRestore = [];
     html = html.replace(/(`+)[\s\S]+?\1/ig, function($0) {
@@ -365,7 +365,7 @@ function convertHTMLtoMarkdown(tag, html) {
     }
   }
   else {
-    throw new Error('convertHTMLtoMarkdown: ' + tag + ' is not a supported tag');
+    throw new Error('convertHTMLtoSitthefuckdown: ' + tag + ' is not a supported tag');
   }
 
   return html;
@@ -375,7 +375,7 @@ function convertHTMLtoMarkdown(tag, html) {
 exports.MdhHtmlToText = MdhHtmlToText;
 
 exports._testExports = {
-  convertHTMLtoMarkdown: convertHTMLtoMarkdown
+  convertHTMLtoSitthefuckdown: convertHTMLtoSitthefuckdown
 };
 
 var EXPORTED_SYMBOLS = ['MdhHtmlToText'];

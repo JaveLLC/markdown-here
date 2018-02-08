@@ -2,17 +2,17 @@
  * Page action (button in address bar)
  */
 
-/* Note that `#pageAction-markdown_here` is an `<image>`, so the `width` can be
+/* Note that `#pageAction-sitthefuckdown_here` is an `<image>`, so the `width` can be
    set directly. */
-#pageAction-markdown_here {
-  list-style-image: url("resource://markdown_here_common/images/icon14-button-monochrome.png");
+#pageAction-sitthefuckdown_here {
+  list-style-image: url("resource://sitthefuckdown_here_common/images/icon14-button-monochrome.png");
   width: 14px;
   height: 14px;
 }
 
 @media (min-resolution: 2dppx) {
-  #pageAction-markdown_here {
-    list-style-image: url("resource://markdown_here_common/images/icon28-button-monochrome.png");
+  #pageAction-sitthefuckdown_here {
+    list-style-image: url("resource://sitthefuckdown_here_common/images/icon28-button-monochrome.png");
   }
 }
 
@@ -21,18 +21,18 @@
  * Context menu
  */
 
-#context-markdown_here {
-  list-style-image: url("resource://markdown_here_common/images/icon16-monochrome.png");
+#context-sitthefuckdown_here {
+  list-style-image: url("resource://sitthefuckdown_here_common/images/icon16-monochrome.png");
 }
 
 @media (min-resolution: 2dppx) {
-  #context-markdown_here {
-    list-style-image: url("resource://markdown_here_common/images/icon32-monochrome.png");
+  #context-sitthefuckdown_here {
+    list-style-image: url("resource://sitthefuckdown_here_common/images/icon32-monochrome.png");
   }
 }
 
 /* Ubuntu doesn't show the menu item icon without coaxing. */
-#context-markdown_here > .menu-iconic-left {
+#context-sitthefuckdown_here > .menu-iconic-left {
   visibility: visible !important;
 }
 
@@ -49,45 +49,45 @@
 /* The not-small toolbar (which doesn't seem to be used in modern Firefox). */
 /* This also controls how the icon will look in the toolbar customize palette. */
 
-#toolbarButton-markdown_here {
-  list-style-image: url("resource://markdown_here_common/images/icon24-button-monochrome.png");
+#toolbarButton-sitthefuckdown_here {
+  list-style-image: url("resource://sitthefuckdown_here_common/images/icon24-button-monochrome.png");
 }
 
 @media (min-resolution: 2dppx) {
-  #toolbarButton-markdown_here {
-    list-style-image: url("resource://markdown_here_common/images/icon48-button-monochrome.png");
+  #toolbarButton-sitthefuckdown_here {
+    list-style-image: url("resource://sitthefuckdown_here_common/images/icon48-button-monochrome.png");
   }
 }
 
-#toolbarButton-markdown_here[disabled="true"] {
-  list-style-image: url("resource://markdown_here_common/images/icon24-button-disabled.png");
+#toolbarButton-sitthefuckdown_here[disabled="true"] {
+  list-style-image: url("resource://sitthefuckdown_here_common/images/icon24-button-disabled.png");
 }
 
 @media (min-resolution: 2dppx) {
-  #toolbarButton-markdown_here[disabled="true"] {
-    list-style-image: url("resource://markdown_here_common/images/icon48-button-disabled.png");
+  #toolbarButton-sitthefuckdown_here[disabled="true"] {
+    list-style-image: url("resource://sitthefuckdown_here_common/images/icon48-button-disabled.png");
   }
 }
 
 /* The "small" icon toolbar, which is the standard. */
 
-toolbar[iconsize="small"] #toolbarButton-markdown_here {
-  list-style-image: url("resource://markdown_here_common/images/icon16-button-monochrome.png");
+toolbar[iconsize="small"] #toolbarButton-sitthefuckdown_here {
+  list-style-image: url("resource://sitthefuckdown_here_common/images/icon16-button-monochrome.png");
 }
 
 @media (min-resolution: 2dppx) {
-  toolbar[iconsize="small"] #toolbarButton-markdown_here {
-    list-style-image: url("resource://markdown_here_common/images/icon32-button-monochrome.png");
+  toolbar[iconsize="small"] #toolbarButton-sitthefuckdown_here {
+    list-style-image: url("resource://sitthefuckdown_here_common/images/icon32-button-monochrome.png");
   }
 }
 
-toolbar[iconsize="small"] #toolbarButton-markdown_here[disabled="true"] {
-  list-style-image: url("resource://markdown_here_common/images/icon16-button-disabled.png");
+toolbar[iconsize="small"] #toolbarButton-sitthefuckdown_here[disabled="true"] {
+  list-style-image: url("resource://sitthefuckdown_here_common/images/icon16-button-disabled.png");
 }
 
 @media (min-resolution: 2dppx) {
-  toolbar[iconsize="small"] #toolbarButton-markdown_here[disabled="true"] {
-    list-style-image: url("resource://markdown_here_common/images/icon32-button-disabled.png");
+  toolbar[iconsize="small"] #toolbarButton-sitthefuckdown_here[disabled="true"] {
+    list-style-image: url("resource://sitthefuckdown_here_common/images/icon32-button-disabled.png");
   }
 }
 
@@ -99,35 +99,35 @@ toolbar[iconsize="small"] #toolbarButton-markdown_here[disabled="true"] {
 
 /* The "normal" size, which is small. */
 
-#composeToolbarButton-markdown_here {
-  list-style-image: url("resource://markdown_here_common/images/icon16-button-monochrome.png");
+#composeToolbarButton-sitthefuckdown_here {
+  list-style-image: url("resource://sitthefuckdown_here_common/images/icon16-button-monochrome.png");
 }
 
-#composeToolbarButton-markdown_here > .toolbarbutton-icon {
+#composeToolbarButton-sitthefuckdown_here > .toolbarbutton-icon {
   width: 16px;
   height: 16px;
 }
 
 @media (min-resolution: 2dppx) {
-  #composeToolbarButton-markdown_here {
-    list-style-image: url("resource://markdown_here_common/images/icon32-button-monochrome.png");
+  #composeToolbarButton-sitthefuckdown_here {
+    list-style-image: url("resource://sitthefuckdown_here_common/images/icon32-button-monochrome.png");
   }
 }
 
 /* The "large" size. This is available in Thunderbird+Xubuntu and Postbox. */
 
-toolbar[iconsize="large"] #composeToolbarButton-markdown_here {
-  list-style-image: url("resource://markdown_here_common/images/icon24-button-monochrome.png");
+toolbar[iconsize="large"] #composeToolbarButton-sitthefuckdown_here {
+  list-style-image: url("resource://sitthefuckdown_here_common/images/icon24-button-monochrome.png");
 }
 
-toolbar[iconsize="large"] #composeToolbarButton-markdown_here > .toolbarbutton-icon {
+toolbar[iconsize="large"] #composeToolbarButton-sitthefuckdown_here > .toolbarbutton-icon {
   width: 24px;
   height: 24px;
 }
 
 @media (min-resolution: 2dppx) {
-  toolbar[iconsize="large"] #composeToolbarButton-markdown_here {
-    list-style-image: url("resource://markdown_here_common/images/icon48-button-monochrome.png");
+  toolbar[iconsize="large"] #composeToolbarButton-sitthefuckdown_here {
+    list-style-image: url("resource://sitthefuckdown_here_common/images/icon48-button-monochrome.png");
   }
 }
 
@@ -136,17 +136,17 @@ toolbar[iconsize="large"] #composeToolbarButton-markdown_here > .toolbarbutton-i
  * Thunderbird formatting toolbar.
  */
 
-#formatToolbarButton-markdown_here {
-  list-style-image: url("resource://markdown_here_common/images/icon16-button-monochrome.png");
+#formatToolbarButton-sitthefuckdown_here {
+  list-style-image: url("resource://sitthefuckdown_here_common/images/icon16-button-monochrome.png");
 }
 
-#formatToolbarButton-markdown_here > .toolbarbutton-icon {
+#formatToolbarButton-sitthefuckdown_here > .toolbarbutton-icon {
   width: 16px;
   height: 16px;
 }
 
 @media (min-resolution: 2dppx) {
-  #formatToolbarButton-markdown_here {
-    list-style-image: url("resource://markdown_here_common/images/icon32-button-monochrome.png");
+  #formatToolbarButton-sitthefuckdown_here {
+    list-style-image: url("resource://sitthefuckdown_here_common/images/icon32-button-monochrome.png");
   }
 }

@@ -1,5 +1,5 @@
 /**
- * marked - a markdown parser
+ * marked - a sitthefuckdown parser
  * Copyright (c) 2011-2013, Christopher Jeffrey. (MIT Licensed)
  * https://github.com/chjj/marked
  */
@@ -268,7 +268,7 @@ Lexer.prototype.token = function(src, top, bq) {
 
       // Pass `top` to keep the current
       // "toplevel" state. This is exactly
-      // how markdown.pl works.
+      // how sitthefuckdown.pl works.
       this.token(cap, top, true);
 
       this.tokens.push({

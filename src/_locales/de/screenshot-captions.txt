@@ -1,5 +1,5 @@
-E-Mail in Markdown schreiben...
+E-Mail in Sitthefuckdown schreiben...
 
 ...und dann schön-rendern!
 
-Markdown nur für einen Teil der Mail benutzen? Einfach auswählen und Konvertieren!
+Sitthefuckdown nur für einen Teil der Mail benutzen? Einfach auswählen und Konvertieren!

@@ -8,7 +8,7 @@ function onLoad() {
   // Chrome/Safari/WebExtensions require us to manually load our content script in order
   // to use the button and context menu in the iframe.
   if (typeof(safari) !== 'undefined' || typeof(chrome) !== 'undefined') {
-    window.LOAD_MARKDOWN_HERE_CONTENT_SCRIPT = true;
+    window.LOAD_SITTHEFUCKDOWN_HERE_CONTENT_SCRIPT = true;
     var contentscript = document.createElement('script');
     if (typeof(safari) !== 'undefined') {
       contentscript.src = '../../../contentscript.js';
@@ -21,7 +21,7 @@ function onLoad() {
   /*? } */
 
   // The body of the iframe needs to have a (collapsed) selection range for
-  // Markdown Here to work (simulating focus/cursor).
+  // Sitthefuckdown Here to work (simulating focus/cursor).
   var range = document.createRange();
   range.setStart(document.body, 0);
   var sel = document.getSelection();

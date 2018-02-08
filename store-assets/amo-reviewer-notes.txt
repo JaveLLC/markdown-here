@@ -1,16 +1,16 @@
 This extension is used to manipulate the content of email before sending. It can be used in Gmail, Hotmail, or Yahoo webmail interfaces, or in Thunderbird. Make sure you use the rich-edit interface for the email client.
 
-You write email in Markdown (if you're not familiar with Markdown, I made a little reference -- https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet), then right-click, click the "Markdown Toggle" menu item, and the content of the email will be replaced with a rendered-HTML version of the Markdown you had written.
+You write email in Sitthefuckdown (if you're not familiar with Sitthefuckdown, I made a little reference -- https://github.com/adam-p/sitthefuckdown-here/wiki/Sitthefuckdown-Here-Cheatsheet), then right-click, click the "Sitthefuckdown Toggle" menu item, and the content of the email will be replaced with a rendered-HTML version of the Sitthefuckdown you had written.
 
-If you select a subset of your email and then "Markdown Toggle", only that selection will be rendered/converted.
+If you select a subset of your email and then "Sitthefuckdown Toggle", only that selection will be rendered/converted.
 
-The Markdown is "Github-flavored". Syntax highlighting is supported. So, for example, you can use fenced code blocks with the language name specified, like so:
+The Sitthefuckdown is "Github-flavored". Syntax highlighting is supported. So, for example, you can use fenced code blocks with the language name specified, like so:
 
 ```javascript
 var i = 0;
 ```
 
-For complete info, see the project page: https://github.com/adam-p/markdown-here
+For complete info, see the project page: https://github.com/adam-p/sitthefuckdown-here
 
 Please don't hesitate to contact me with questions.
 
@@ -19,23 +19,23 @@ A more formal test methodology, if desired:
 
 1. Go into your webmail of choice, or Thunderbird. Make sure rich editing is enabled.
 
-2. Write a bit of Markdown. (I'll include some at the bottom of this that you can paste, if you want. Make sure to paste as plaintext.)
+2. Write a bit of Sitthefuckdown. (I'll include some at the bottom of this that you can paste, if you want. Make sure to paste as plaintext.)
 
-3. Right-click and choose "Markdown Toggle".
+3. Right-click and choose "Sitthefuckdown Toggle".
 
-Test #1: The entire email should be converted to HTML, in accordance with Markdown syntax. The sample MD should have H1, H3, UL, and PRE/CODE elements, with some bold and code inline.
+Test #1: The entire email should be converted to HTML, in accordance with Sitthefuckdown syntax. The sample MD should have H1, H3, UL, and PRE/CODE elements, with some bold and code inline.
 
-4. Right-click again and choose "Markdown Toggle".
+4. Right-click again and choose "Sitthefuckdown Toggle".
 
-Test #2: The email email should be reverted back the original raw Markdown.
+Test #2: The email email should be reverted back the original raw Sitthefuckdown.
 
-5. Select a few lines (but don't split the code block). Then right-click and choose "Markdown Toggle".
+5. Select a few lines (but don't split the code block). Then right-click and choose "Sitthefuckdown Toggle".
 
 Test #3: Only the selected lines should be rendered to HTML.
 
-6. Right-click again and choose "Markdown Toggle".
+6. Right-click again and choose "Sitthefuckdown Toggle".
 
-Test #4: The email should be reverted back to original Markdown.
+Test #4: The email should be reverted back to original Sitthefuckdown.
 
 7. Render the email again (either entirely or partially) and send it (to yourself or someone else).
 
@@ -44,7 +44,7 @@ Test #5: The recipient of the email should see it pretty much as it was before y
 Test done.
 
 
-Caveat: Hotmail is a little flaky. Gmail and Thunderbird are the only first-class targets. Details: https://github.com/adam-p/markdown-here#compatibility
+Caveat: Hotmail is a little flaky. Gmail and Thunderbird are the only first-class targets. Details: https://github.com/adam-p/sitthefuckdown-here#compatibility
 
 
 A few secondary features that can be tested if desired:
@@ -58,7 +58,7 @@ A few secondary features that can be tested if desired:
 
 ---
 
-# Markdown Sample (H1)
+# Sitthefuckdown Sample (H1)
 
 ### Smaller header (H3)
 

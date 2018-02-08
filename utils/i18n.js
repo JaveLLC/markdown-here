@@ -131,7 +131,7 @@ function getMozillaLocaleMappings() {
       mappings = {},
       i, match;
   for (var i = 0; i < lines.length; i++) {
-    match = lines[i].match(/^locale\s+markdown_here\s+([a-zA-Z_-]+)\s+firefox\/chrome\/locale\/([a-zA-Z_-]+)\/$/);
+    match = lines[i].match(/^locale\s+sitthefuckdown_here\s+([a-zA-Z_-]+)\s+firefox\/chrome\/locale\/([a-zA-Z_-]+)\/$/);
     if (match) {
       mappings[match[2]] = match[1];
     }

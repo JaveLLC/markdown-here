@@ -4,7 +4,7 @@
 
     <Description about="urn:mozilla:install-manifest">
         <em:type>2</em:type> <!-- 2 : Extension -->
-        <em:id>markdown-here@adam.pritchard</em:id>
+        <em:id>sitthefuckdown-here@adam.pritchard</em:id>
         <em:version>2.13.0</em:version>
 
         <em:targetApplication>
@@ -42,118 +42,118 @@
         <em:localized>
           <Description>
             <em:locale>de</em:locale>
-            <em:name>Markdown Here</em:name>
-            <em:description>E-Mail in Markdown schreiben, dann aufhübschen lassen.</em:description>
+            <em:name>Sitthefuckdown Here</em:name>
+            <em:description>E-Mail in Sitthefuckdown schreiben, dann aufhübschen lassen.</em:description>
           </Description>
         </em:localized>
 
         <em:localized>
           <Description>
             <em:locale>en</em:locale>
-            <em:name>Markdown Here</em:name>
-            <em:description>Write your email in Markdown, then make it pretty.</em:description>
+            <em:name>Sitthefuckdown Here</em:name>
+            <em:description>Write your email in Sitthefuckdown, then make it pretty.</em:description>
           </Description>
         </em:localized>
 
         <em:localized>
           <Description>
             <em:locale>es</em:locale>
-            <em:name>Markdown Here</em:name>
-            <em:description>Escribe tu correo electrónico en Markdown, y hazlo bonito.</em:description>
+            <em:name>Sitthefuckdown Here</em:name>
+            <em:description>Escribe tu correo electrónico en Sitthefuckdown, y hazlo bonito.</em:description>
           </Description>
         </em:localized>
 
         <em:localized>
           <Description>
             <em:locale>fr</em:locale>
-            <em:name>Markdown Here</em:name>
-            <em:description>Écrivez votre courriel avec Markdown, puis rendez-le attrayant.</em:description>
+            <em:name>Sitthefuckdown Here</em:name>
+            <em:description>Écrivez votre courriel avec Sitthefuckdown, puis rendez-le attrayant.</em:description>
           </Description>
         </em:localized>
 
         <em:localized>
           <Description>
             <em:locale>it</em:locale>
-            <em:name>Markdown Here</em:name>
-            <em:description>Scrivi la tua email in Markdown, quindi rendila bella.</em:description>
+            <em:name>Sitthefuckdown Here</em:name>
+            <em:description>Scrivi la tua email in Sitthefuckdown, quindi rendila bella.</em:description>
           </Description>
         </em:localized>
 
         <em:localized>
           <Description>
             <em:locale>ja</em:locale>
-            <em:name>Markdown Here</em:name>
-            <em:description>Markdownで電子メールを美しく</em:description>
+            <em:name>Sitthefuckdown Here</em:name>
+            <em:description>Sitthefuckdownで電子メールを美しく</em:description>
           </Description>
         </em:localized>
 
         <em:localized>
           <Description>
             <em:locale>ko</em:locale>
-            <em:name>Markdown Here</em:name>
-            <em:description>Write your email in Markdown, then make it pretty.</em:description>
+            <em:name>Sitthefuckdown Here</em:name>
+            <em:description>Write your email in Sitthefuckdown, then make it pretty.</em:description>
           </Description>
         </em:localized>
 
         <em:localized>
           <Description>
             <em:locale>pl</em:locale>
-            <em:name>Markdown Here</em:name>
-            <em:description>Napisz e-mail w języku Markdown a następnie go upiększ.</em:description>
+            <em:name>Sitthefuckdown Here</em:name>
+            <em:description>Napisz e-mail w języku Sitthefuckdown a następnie go upiększ.</em:description>
           </Description>
         </em:localized>
 
         <em:localized>
           <Description>
             <em:locale>pt-BR</em:locale>
-            <em:name>Markdown Here</em:name>
-            <em:description>Escreva seu email em Markdown e o torne elegante.</em:description>
+            <em:name>Sitthefuckdown Here</em:name>
+            <em:description>Escreva seu email em Sitthefuckdown e o torne elegante.</em:description>
           </Description>
         </em:localized>
 
         <em:localized>
           <Description>
             <em:locale>ru</em:locale>
-            <em:name>Markdown Here</em:name>
-            <em:description>Напишите ваш емейл в Markdown и сделайте его стильным.</em:description>
+            <em:name>Sitthefuckdown Here</em:name>
+            <em:description>Напишите ваш емейл в Sitthefuckdown и сделайте его стильным.</em:description>
           </Description>
         </em:localized>
 
         <em:localized>
           <Description>
             <em:locale>tr</em:locale>
-            <em:name>Markdown Here</em:name>
-            <em:description>Markdown ile email yaz, sonra da güzelleştir.</em:description>
+            <em:name>Sitthefuckdown Here</em:name>
+            <em:description>Sitthefuckdown ile email yaz, sonra da güzelleştir.</em:description>
           </Description>
         </em:localized>
 
         <em:localized>
           <Description>
             <em:locale>zh-CN</em:locale>
-            <em:name>Markdown Here</em:name>
-            <em:description>用Markdown写一封漂亮的电子邮件。</em:description>
+            <em:name>Sitthefuckdown Here</em:name>
+            <em:description>用Sitthefuckdown写一封漂亮的电子邮件。</em:description>
           </Description>
         </em:localized>
 
         <em:localized>
           <Description>
             <em:locale>zh-TW</em:locale>
-            <em:name>Markdown Here</em:name>
-            <em:description>用Markdown寫一封漂亮的電子郵件。</em:description>
+            <em:name>Sitthefuckdown Here</em:name>
+            <em:description>用Sitthefuckdown寫一封漂亮的電子郵件。</em:description>
           </Description>
         </em:localized>
 
 <!-- /i18n -->
 
         <!-- There also needs to be a top-level copy of these fields. -->
-        <em:name>Markdown Here</em:name>
-        <em:description>Write your email in Markdown, then make it pretty.</em:description>
+        <em:name>Sitthefuckdown Here</em:name>
+        <em:description>Write your email in Sitthefuckdown, then make it pretty.</em:description>
 
-        <em:iconURL>resource://markdown_here_common/images/icon128.png</em:iconURL>
-        <em:homepageURL>https://github.com/adam-p/markdown-here</em:homepageURL>
+        <em:iconURL>resource://sitthefuckdown_here_common/images/icon128.png</em:iconURL>
+        <em:homepageURL>https://github.com/adam-p/sitthefuckdown-here</em:homepageURL>
 
         <em:optionsType>1</em:optionsType>
-        <em:optionsURL>chrome://markdown_here/content/options.xul</em:optionsURL>
+        <em:optionsURL>chrome://sitthefuckdown_here/content/options.xul</em:optionsURL>
 
     </Description>
 </RDF>

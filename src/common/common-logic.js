@@ -5,7 +5,7 @@
 
 /*
  * Application logic that is common to all (or some) platforms.
- * (And isn't generic enough for utils.js or render-y enough for markdown-render.js,
+ * (And isn't generic enough for utils.js or render-y enough for sitthefuckdown-render.js,
  * etc.)
  *
  * This module assumes that a global `window` is available.
@@ -120,7 +120,7 @@ var SPACE_KEYCODE = 32;
 var TAB_KEYCODE = 9;
 var ESCAPE_KEYCODE = 27;
 
-var WATCHED_PROPERTY = 'markdownHereForgotToRenderWatched';
+var WATCHED_PROPERTY = 'sitthefuckdownHereForgotToRenderWatched';
 
 // Returns the correct selector to use when looking for the Send button.
 // Returns null if forgot-to-render should not be used here.
@@ -140,8 +140,8 @@ function getForgotToRenderButtonSelector(elem) {
 
 
 // This function encapsulates the logic required to prevent accidental sending
-// of email that the user wrote in Markdown but forgot to render.
-function forgotToRenderIntervalCheck(focusedElem, MarkdownHere, MdhHtmlToText, marked, prefs) {
+// of email that the user wrote in Sitthefuckdown but forgot to render.
+function forgotToRenderIntervalCheck(focusedElem, SitthefuckdownHere, MdhHtmlToText, marked, prefs) {
   if (!prefs['forgot-to-render-check-enabled']) {
     debugLog('forgotToRenderIntervalCheck', 'pref disabled');
     return;
@@ -164,7 +164,7 @@ function forgotToRenderIntervalCheck(focusedElem, MarkdownHere, MdhHtmlToText, m
   }
 
   // If focus isn't in the compose body, there's nothing to do
-  if (!MarkdownHere.elementCanBeRendered(focusedElem)) {
+  if (!SitthefuckdownHere.elementCanBeRendered(focusedElem)) {
     debugLog('forgotToRenderIntervalCheck', 'cannot be rendered');
     return;
   }
@@ -220,7 +220,7 @@ function findClosestSendButton(elem) {
 
 // Totally shuts down propagation of event, if we didn't trigger the event.
 function eatEvent(event) {
-  if (event[Utils.MARKDOWN_HERE_EVENT]) {
+  if (event[Utils.SITTHEFUCKDOWN_HERE_EVENT]) {
     debugLog('eatEvent', 'MDH event eaten', event.type);
     return;
   }
@@ -237,13 +237,13 @@ function setupForgotToRenderInterceptors(composeElem, MdhHtmlToText, marked, pre
   var composeSendButton = findClosestSendButton(composeElem);
 
   if (!composeSendButton) {
-    Utils.consoleLog('Markdown Here was unable to find the Gmail "Send" button. Please let the developers know by creating an issue at: https://github.com/adam-p/markdown-here/issues');
+    Utils.consoleLog('Sitthefuckdown Here was unable to find the Gmail "Send" button. Please let the developers know by creating an issue at: https://github.com/adam-p/sitthefuckdown-here/issues');
     return;
   }
 
   var shouldIntercept = function() {
     var mdMaybe = new MdhHtmlToText.MdhHtmlToText(composeElem, null, true).get();
-    return probablyWritingMarkdown(mdMaybe, marked, prefs);
+    return probablyWritingSitthefuckdown(mdMaybe, marked, prefs);
   };
 
   // Helper function to look for element within parents up to a certain point.
@@ -286,7 +286,7 @@ function setupForgotToRenderInterceptors(composeElem, MdhHtmlToText, marked, pre
 
   var composeSendButtonClickListener = function(event) {
     if (isSendButtonOrChild(event.target) &&
-        !event[Utils.MARKDOWN_HERE_EVENT] &&
+        !event[Utils.SITTHEFUCKDOWN_HERE_EVENT] &&
         shouldIntercept()) {
       eatEvent(event);
       showForgotToRenderPromptAndRespond(composeElem, composeSendButton);
@@ -324,13 +324,13 @@ function setupForgotToRenderInterceptors(composeElem, MdhHtmlToText, marked, pre
   composeElem.parentNode.addEventListener('keydown', sendHotkeyKeydownListener, true);
 }
 
-// Returns true if `text` looks like raw Markdown, false otherwise.
-function probablyWritingMarkdown(mdMaybe, marked, prefs) {
+// Returns true if `text` looks like raw Sitthefuckdown, false otherwise.
+function probablyWritingSitthefuckdown(mdMaybe, marked, prefs) {
   /*
   This is going to be tricksy and fraught with danger. Challenges:
     * If it's not sensitive enough, it's useless.
     * If it's too sensitive, users will be super annoyed.
-    * Different people write different kinds of Markdown: coders use backticks,
+    * Different people write different kinds of Sitthefuckdown: coders use backticks,
       mathies use dollar signs, normal people don't use either.
     * Being slow would be bad.
 
@@ -358,14 +358,14 @@ function probablyWritingMarkdown(mdMaybe, marked, prefs) {
 
   function logMatch(type, match) {
     var log =
-      'Markdown Here detected unrendered ' + type +
+      'Sitthefuckdown Here detected unrendered ' + type +
       (typeof(match.index) !== 'undefined' ?
         (': "' + mdMaybe.slice(match.index, match.index+10) + '"') :
         '');
 
-    if (log !== probablyWritingMarkdown.lastLog) {
+    if (log !== probablyWritingSitthefuckdown.lastLog) {
       Utils.consoleLog(log);
-      probablyWritingMarkdown.lastLog = log;
+      probablyWritingSitthefuckdown.lastLog = log;
     }
   }
 
@@ -447,7 +447,7 @@ function showForgotToRenderPromptAndRespond(composeElem, composeSendButton) {
       out:null
     };
     composeElem.ownerDocument.defaultView.openDialog(
-      "chrome://markdown_here/content/confirm-prompt.xul",
+      "chrome://sitthefuckdown_here/content/confirm-prompt.xul",
       "",
       "chrome, dialog, modal, centerscreen",
       promptParams).focus();
@@ -482,7 +482,7 @@ function showHTMLForgotToRenderPrompt(html, composeElem, composeSendButton, call
   // Note that `elem` is no longer valid after we call Utils.saferSetOuterHTML on it.
 
   // Set focus to our first button.
-  Utils.setFocus(composeSendButton.ownerDocument.querySelector('#markdown-here-forgot-to-render-buttons button'));
+  Utils.setFocus(composeSendButton.ownerDocument.querySelector('#sitthefuckdown-here-forgot-to-render-buttons button'));
 
   // We're going to prevent `keyup` firing for a short amount of time to help
   // deal with late `keyup` events resulting from initial Gmail Send activation.
@@ -555,7 +555,7 @@ function showHTMLForgotToRenderPrompt(html, composeElem, composeSendButton, call
   dismissPrompt = function(doc, send) {
     keyboardCapture.remove();
 
-    var forgotToRenderContent = doc.querySelector('#markdown-here-forgot-to-render');
+    var forgotToRenderContent = doc.querySelector('#sitthefuckdown-here-forgot-to-render');
     if (forgotToRenderContent) {
       doc.body.removeChild(forgotToRenderContent);
     }
@@ -565,19 +565,19 @@ function showHTMLForgotToRenderPrompt(html, composeElem, composeSendButton, call
 
   keyboardCapture.add();
 
-  closeLink = composeSendButton.ownerDocument.querySelector('#markdown-here-forgot-to-render-close');
+  closeLink = composeSendButton.ownerDocument.querySelector('#sitthefuckdown-here-forgot-to-render-close');
   closeLink.addEventListener('click', function(event) {
     eatEvent(event);
     dismissPrompt(event.target.ownerDocument, false);
   });
 
-  backButton = composeSendButton.ownerDocument.querySelector('#markdown-here-forgot-to-render-button-back');
+  backButton = composeSendButton.ownerDocument.querySelector('#sitthefuckdown-here-forgot-to-render-button-back');
   backButton.addEventListener('click', function(event) {
     eatEvent(event);
     dismissPrompt(event.target.ownerDocument, false);
   });
 
-  sendButton = composeSendButton.ownerDocument.querySelector('#markdown-here-forgot-to-render-button-send');
+  sendButton = composeSendButton.ownerDocument.querySelector('#sitthefuckdown-here-forgot-to-render-button-send');
   sendButton.addEventListener('click', function(event) {
     eatEvent(event);
     dismissPrompt(event.target.ownerDocument, true);
@@ -595,7 +595,7 @@ var CommonLogic = {};
 CommonLogic.getUpgradeNotification = getUpgradeNotification;
 CommonLogic.getForgotToRenderPromptContent = getForgotToRenderPromptContent;
 CommonLogic.forgotToRenderIntervalCheck = forgotToRenderIntervalCheck;
-CommonLogic.probablyWritingMarkdown = probablyWritingMarkdown;
+CommonLogic.probablyWritingSitthefuckdown = probablyWritingSitthefuckdown;
 
 
 var EXPORTED_SYMBOLS = ['CommonLogic'];

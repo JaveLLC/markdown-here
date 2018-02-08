@@ -4,7 +4,7 @@
  */
 
 "use strict";
-/*global chrome:false, OptionsStore:false, MarkdownRender:false,
+/*global chrome:false, OptionsStore:false, SitthefuckdownRender:false,
   marked:false, hljs:false, Utils:false, CommonLogic:false */
 /*jshint devel:true, browser:true*/
 
@@ -14,9 +14,9 @@
 
 // On each load, check if we should show the options/changelist page.
 function onLoad() {
-  // This timeout is a dirty hack to fix bug #119: "Markdown Here Upgrade
+  // This timeout is a dirty hack to fix bug #119: "Sitthefuckdown Here Upgrade
   // Notification every time I open Chrome". That issue on Github for details.
-  // https://github.com/adam-p/markdown-here/issues/119
+  // https://github.com/adam-p/sitthefuckdown-here/issues/119
   window.setTimeout(upgradeCheck, 30000);
 }
 
@@ -61,7 +61,7 @@ chrome.contextMenus.create({
 });
 
 // Handle rendering requests from the content script.
-// See the comment in markdown-render.js for why we do this.
+// See the comment in sitthefuckdown-render.js for why we do this.
 chrome.runtime.onMessage.addListener(function(request, sender, responseCallback) {
   // The content script can load in a not-real tab (like the search box), which
   // has an invalid `sender.tab` value. We should just ignore these pages.
@@ -73,7 +73,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, responseCallback)
   if (request.action === 'render') {
     OptionsStore.get(function(prefs) {
       responseCallback({
-        html: MarkdownRender.markdownRender(
+        html: SitthefuckdownRender.sitthefuckdownRender(
           request.mdText,
           prefs,
           marked,

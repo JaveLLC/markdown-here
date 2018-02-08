@@ -3,7 +3,7 @@
   "name": "__MSG_app_name__",
   "version": "2.13.1",
   "description": "__MSG_app_slogan__",
-  "homepage_url": "http://markdown-here.com",
+  "homepage_url": "http://sitthefuckdown-here.com",
   "default_locale": "en",
   "icons": {
     "16": "common/images/icon16.png",
@@ -23,7 +23,7 @@
         "common/jsHtmlToText.js",
         "common/marked.js",
         "common/mdh-html-to-text.js",
-        "common/markdown-here.js",
+        "common/sitthefuckdown-here.js",
         "chrome/contentscript.js"
         ]
     }
@@ -46,7 +46,7 @@
 
   ,"applications": {
     "gecko": {
-      "id": "markdown-here-webext@adam.pritchard"
+      "id": "sitthefuckdown-here-webext@adam.pritchard"
     }
   }
 }

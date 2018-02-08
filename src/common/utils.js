@@ -121,7 +121,7 @@ function walkDOM(node, func) {
 
 // Next three functions from: http://stackoverflow.com/a/1483487/729729
 // Returns true if `node` is in `range`.
-// NOTE: This function is broken in Postbox: https://github.com/adam-p/markdown-here/issues/179
+// NOTE: This function is broken in Postbox: https://github.com/adam-p/sitthefuckdown-here/issues/179
 function rangeIntersectsNode(range, node) {
   var nodeRange;
 
@@ -309,7 +309,7 @@ function getLocalURL(url) {
   /*? if (platform==='safari') { */
   if (!matched && typeof(safari) !== 'undefined') {
     matched = true;
-    return safari.extension.baseURI + 'markdown-here/src' + url;
+    return safari.extension.baseURI + 'sitthefuckdown-here/src' + url;
   }
   /*? } */
   /*? if(platform==='thunderbird'){ */
@@ -324,10 +324,10 @@ function getLocalURL(url) {
     var CONTENT = '/firefox/chrome/';
 
     if (url.indexOf(COMMON) === 0) {
-      return 'resource://markdown_here_common/' + url.slice(COMMON.length);
+      return 'resource://sitthefuckdown_here_common/' + url.slice(COMMON.length);
     }
     else if (url.indexOf(CONTENT) === 0) {
-      return 'chrome://markdown_here/' + url.slice(CONTENT.length);
+      return 'chrome://sitthefuckdown_here/' + url.slice(CONTENT.length);
     }
   }
   /*? } */
@@ -424,8 +424,8 @@ function getLocalFileAsBase64(url, callback) {
 }
 
 
-// Events fired by Markdown Here will have this property set to true.
-var MARKDOWN_HERE_EVENT = 'markdown-here-event';
+// Events fired by Sitthefuckdown Here will have this property set to true.
+var SITTHEFUCKDOWN_HERE_EVENT = 'sitthefuckdown-here-event';
 
 // Fire a mouse event on the given element. (Note: not super robust.)
 function fireMouseClick(elem) {
@@ -447,13 +447,13 @@ function fireMouseClick(elem) {
     0,                              // button
     null);                          // relatedTarget
 
-  clickEvent[MARKDOWN_HERE_EVENT] = true;
+  clickEvent[SITTHEFUCKDOWN_HERE_EVENT] = true;
 
   elem.dispatchEvent(clickEvent);
 }
 
 
-var PRIVILEGED_REQUEST_EVENT_NAME = 'markdown-here-request-event';
+var PRIVILEGED_REQUEST_EVENT_NAME = 'sitthefuckdown-here-request-event';
 
 function makeRequestToPrivilegedScript(doc, requestObj, callback) {
   // (This if-structure is ugly to work around the preprocessor logic.)
@@ -523,7 +523,7 @@ function makeRequestToPrivilegedScript(doc, requestObj, callback) {
     // See: https://developer.mozilla.org/en-US/docs/Code_snippets/Interaction_between_privileged_and_non-privileged_pages#Chromium-like_messaging.3A_json_request_with_json_callback
 
     // Make a unique event name to use. (Bad style to modify the input like this...)
-    requestObj.responseEventName = 'markdown-here-response-event-' + Math.floor(Math.random()*1000000);
+    requestObj.responseEventName = 'sitthefuckdown-here-response-event-' + Math.floor(Math.random()*1000000);
 
     var request = doc.createTextNode(JSON.stringify(requestObj));
 
@@ -758,7 +758,7 @@ function getMozStringBundle() {
   stringBundle = window.Components.classes["@mozilla.org/intl/stringbundle;1"]
                         .getService(Components.interfaces.nsIStringBundleService)
                         // Notice the explicit locale in this path:
-                        .createBundle("resource://markdown_here_locale/en/strings.properties");
+                        .createBundle("resource://sitthefuckdown_here_locale/en/strings.properties");
 
   stringBundleEnum = stringBundle.getSimpleEnumeration();
   while (stringBundleEnum.hasMoreElements()) {
@@ -770,7 +770,7 @@ function getMozStringBundle() {
 
   stringBundle = window.Components.classes["@mozilla.org/intl/stringbundle;1"]
                         .getService(Components.interfaces.nsIStringBundleService)
-                        .createBundle("chrome://markdown_here/locale/strings.properties");
+                        .createBundle("chrome://sitthefuckdown_here/locale/strings.properties");
 
   stringBundleEnum = stringBundle.getSimpleEnumeration();
   while (stringBundleEnum.hasMoreElements()) {
@@ -847,7 +847,7 @@ function getSafariStringBundle(callback) {
         getStringBundle(locale, function(data, err) {
           if (err) {
             // Couldn't find it. We'll just have to use the fallback.
-            consoleLog('Markdown Here has no language support for: ' + locale);
+            consoleLog('Sitthefuckdown Here has no language support for: ' + locale);
             return callback(stringBundle);
           }
 
@@ -897,7 +897,7 @@ if (typeof(safari) !== 'undefined') {
     // calling from a privileged script
     getSafariStringBundle(function(data, err) {
       if (err) {
-        consoleLog('Markdown Here: privileged script failed to load string bundle: ' + err);
+        consoleLog('Sitthefuckdown Here: privileged script failed to load string bundle: ' + err);
         return;
       }
       g_safariStringBundle = data;
@@ -912,7 +912,7 @@ if (typeof(safari) !== 'undefined') {
         triggerStringBundleLoadListeners();
       }
       else {
-        consoleLog('Markdown Here: content script failed to get string bundle from privileged script');
+        consoleLog('Sitthefuckdown Here: content script failed to get string bundle from privileged script');
       }
     });
   }
@@ -1163,7 +1163,7 @@ Utils.getLocalURL = getLocalURL;
 Utils.getLocalFile = getLocalFile;
 Utils.getLocalFileAsBase64 = getLocalFileAsBase64;
 Utils.fireMouseClick = fireMouseClick;
-Utils.MARKDOWN_HERE_EVENT = MARKDOWN_HERE_EVENT;
+Utils.SITTHEFUCKDOWN_HERE_EVENT = SITTHEFUCKDOWN_HERE_EVENT;
 Utils.makeRequestToPrivilegedScript = makeRequestToPrivilegedScript;
 Utils.PRIVILEGED_REQUEST_EVENT_NAME = PRIVILEGED_REQUEST_EVENT_NAME;
 Utils.consoleLog = consoleLog;

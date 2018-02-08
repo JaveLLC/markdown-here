@@ -2483,7 +2483,7 @@ exports.Min = require('./min');
 exports.Spec = require('./spec');
 exports.Nyan = require('./nyan');
 exports.XUnit = require('./xunit');
-exports.Markdown = require('./markdown');
+exports.Sitthefuckdown = require('./sitthefuckdown');
 exports.Progress = require('./progress');
 exports.Landing = require('./landing');
 exports.JSONCov = require('./json-cov');
@@ -2963,7 +2963,7 @@ List.prototype.constructor = List;
 
 }); // module: reporters/list.js
 
-require.register("reporters/markdown.js", function(module, exports, require){
+require.register("reporters/sitthefuckdown.js", function(module, exports, require){
 /**
  * Module dependencies.
  */
@@ -2972,19 +2972,19 @@ var Base = require('./base')
   , utils = require('../utils');
 
 /**
- * Expose `Markdown`.
+ * Expose `Sitthefuckdown`.
  */
 
-exports = module.exports = Markdown;
+exports = module.exports = Sitthefuckdown;
 
 /**
- * Initialize a new `Markdown` reporter.
+ * Initialize a new `Sitthefuckdown` reporter.
  *
  * @param {Runner} runner
  * @api public
  */
 
-function Markdown(runner) {
+function Sitthefuckdown(runner) {
   Base.call(this, runner);
 
   var self = this
@@ -3055,7 +3055,7 @@ function Markdown(runner) {
     process.stdout.write(buf);
   });
 }
-}); // module: reporters/markdown.js
+}); // module: reporters/sitthefuckdown.js
 
 require.register("reporters/min.js", function(module, exports, require){
 

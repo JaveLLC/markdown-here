@@ -1,10 +1,10 @@
 <style>
     /* CSS reset. Borrowed from Vimium: https://github.com/philc/vimium/blob/5bd32a511da813d731f73c4d646c14a69c2515ff/content_scripts/vimium.css */
-  .markdown-here-reset,
-  a.markdown-here-reset,
-  a:visited.markdown-here-reset,
-  a:hover.markdown-here-reset,
-  a:link.markdown-here-reset {
+  .sitthefuckdown-here-reset,
+  a.sitthefuckdown-here-reset,
+  a:visited.sitthefuckdown-here-reset,
+  a:hover.sitthefuckdown-here-reset,
+  a:link.sitthefuckdown-here-reset {
     background: none;
     border: none;
     bottom: auto;
@@ -43,14 +43,14 @@
     z-index: 99999999;
   }
 
-  #markdown-here-upgrade-notification-content,
-  #markdown-here-upgrade-notification-link {
+  #sitthefuckdown-here-upgrade-notification-content,
+  #sitthefuckdown-here-upgrade-notification-link {
     font-family: Tahoma, Helvetica, arial, freesans, clean, sans-serif;
     font-size: 16px;
     color: #3E055F;
   }
 
-  #markdown-here-upgrade-notification-content {
+  #sitthefuckdown-here-upgrade-notification-content {
     position: fixed;
     display: block;
     bottom: 0;
@@ -64,34 +64,34 @@
     transition: opacity 1000ms;
   }
 
-  #markdown-here-upgrade-notification-link {
+  #sitthefuckdown-here-upgrade-notification-link {
     display: block;
     padding: 5px;
   }
 
-  #markdown-here-upgrade-notification-link:hover {
+  #sitthefuckdown-here-upgrade-notification-link:hover {
     text-decoration: underline;
     cursor: pointer;
   }
 
-  #markdown-here-upgrade-notification-close {
+  #sitthefuckdown-here-upgrade-notification-close {
     position: absolute;
     top: 1px;
     right: 2px;
   }
 
-  #markdown-here-upgrade-notification-close:hover {
+  #sitthefuckdown-here-upgrade-notification-close:hover {
     cursor: pointer;
   }
 
-  #markdown-here-upgrade-notification-logo {
+  #sitthefuckdown-here-upgrade-notification-logo {
     vertical-align: bottom;
   }
 </style>
-<div id="markdown-here-upgrade-notification-content" class="markdown-here-reset">
-  <a id="markdown-here-upgrade-notification-link" class="markdown-here-reset" target="_blank" href="{{optionsURL}}" title="{{upgrade_notification_changes_tooltip}}">
-    <img id="markdown-here-upgrade-notification-logo" class="markdown-here-reset" style="width:16px" src="data:image/png;base64,{{logoBase64}}"/>
+<div id="sitthefuckdown-here-upgrade-notification-content" class="sitthefuckdown-here-reset">
+  <a id="sitthefuckdown-here-upgrade-notification-link" class="sitthefuckdown-here-reset" target="_blank" href="{{optionsURL}}" title="{{upgrade_notification_changes_tooltip}}">
+    <img id="sitthefuckdown-here-upgrade-notification-logo" class="sitthefuckdown-here-reset" style="width:16px" src="data:image/png;base64,{{logoBase64}}"/>
     {{upgrade_notification_text}}
   </a>
-  <a id="markdown-here-upgrade-notification-close" class="markdown-here-reset" href="#" title="{{upgrade_notification_dismiss_tooltip}}">&#215;</a>
+  <a id="sitthefuckdown-here-upgrade-notification-close" class="sitthefuckdown-here-reset" href="#" title="{{upgrade_notification_dismiss_tooltip}}">&#215;</a>
 </div>

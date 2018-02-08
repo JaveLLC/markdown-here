@@ -1,7 +1,7 @@
-<!ENTITY app_name "Markdown Here">
-<!ENTITY context_menu_item "Markdown An/Aus">
+<!ENTITY app_name "Sitthefuckdown Here">
+<!ENTITY context_menu_item "Sitthefuckdown An/Aus">
 <!ENTITY forgot_to_render_back_button "Zurück">
 <!ENTITY forgot_to_render_send_button "Senden">
 <!ENTITY toggle_button_text "MD An/Aus">
-<!ENTITY toggle_button_tooltip "Zwischen Markdown und gerendert wechseln">
-<!ENTITY toggle_button_tooltip_disabled "Das ausgewählte Feld kann nicht als Markdown gerendert werden">
+<!ENTITY toggle_button_tooltip "Zwischen Sitthefuckdown und gerendert wechseln">
+<!ENTITY toggle_button_tooltip_disabled "Das ausgewählte Feld kann nicht als Sitthefuckdown gerendert werden">

@@ -4,7 +4,7 @@
  */
 
 "use strict";
-/*global chrome:false, markdownHere:false, CommonLogic:false, htmlToText:false,
+/*global chrome:false, sitthefuckdownHere:false, CommonLogic:false, htmlToText:false,
     Utils:false, MdhHtmlToText:false, marked:false*/
 /*jshint devel:true, browser:true*/
 
@@ -24,24 +24,24 @@ function requestHandler(request, sender, sendResponse) {
                   request.action === 'button-click')) {
 
     // Check if the focused element is a valid render target
-    focusedElem = markdownHere.findFocusedElem(window.document);
+    focusedElem = sitthefuckdownHere.findFocusedElem(window.document);
     if (!focusedElem) {
       // Shouldn't happen. But if it does, just silently abort.
       return false;
     }
 
-    if (!markdownHere.elementCanBeRendered(focusedElem)) {
+    if (!sitthefuckdownHere.elementCanBeRendered(focusedElem)) {
       alert(Utils.getMessage('invalid_field'));
       return false;
     }
 
     var logger = function() { console.log.apply(console, arguments); };
 
-    mdReturn = markdownHere(
+    mdReturn = sitthefuckdownHere(
                 document,
-                requestMarkdownConversion,
+                requestSitthefuckdownConversion,
                 logger,
-                markdownRenderComplete);
+                sitthefuckdownRenderComplete);
 
     if (typeof(mdReturn) === 'string') {
       // Error message was returned.
@@ -65,8 +65,8 @@ chrome.runtime.onMessage.addListener(requestHandler);
 
 
 // The rendering service provided to the content script.
-// See the comment in markdown-render.js for why we do this.
-function requestMarkdownConversion(elem, range, callback) {
+// See the comment in sitthefuckdown-render.js for why we do this.
+function requestSitthefuckdownConversion(elem, range, callback) {
   var mdhHtmlToText = new MdhHtmlToText.MdhHtmlToText(elem, range);
 
   // Send a request to the add-on script to actually do the rendering.
@@ -74,14 +74,14 @@ function requestMarkdownConversion(elem, range, callback) {
     document,
     { action: 'render', mdText: mdhHtmlToText.get() },
     function(response) {
-      var renderedMarkdown = mdhHtmlToText.postprocess(response.html);
-      callback(renderedMarkdown, response.css);
+      var renderedSitthefuckdown = mdhHtmlToText.postprocess(response.html);
+      callback(renderedSitthefuckdown, response.css);
     });
 }
 
 
 // When rendering (or unrendering) completed, do our interval checks.
-function markdownRenderComplete(elem, rendered) {
+function sitthefuckdownRenderComplete(elem, rendered) {
   intervalCheck(elem);
 }
 
@@ -137,7 +137,7 @@ function setToggleButtonVisibility(elem) {
     // arguments.
     elem.ownerDocument.addEventListener('focus', focusChange, true);
 
-    renderable = markdownHere.elementCanBeRendered(elem);
+    renderable = sitthefuckdownHere.elementCanBeRendered(elem);
   }
 
   if (renderable !== lastRenderable) {
@@ -148,7 +148,7 @@ function setToggleButtonVisibility(elem) {
 
 
 // When the focus in the page changes, check if the newly focused element is
-// a valid Markdown Toggle target.
+// a valid Sitthefuckdown Toggle target.
 function focusChange(event) {
   setToggleButtonVisibility(event.target);
 }
@@ -235,7 +235,7 @@ var forgotToRenderIntervalCheckPrefs = null;
 
 // `elem` is optional. If not provided, the focused element will be checked.
 function intervalCheck(elem) {
-  var focusedElem = elem || markdownHere.findFocusedElem(window.document);
+  var focusedElem = elem || sitthefuckdownHere.findFocusedElem(window.document);
   if (!focusedElem) {
     return;
   }
@@ -256,7 +256,7 @@ function intervalCheck(elem) {
   else {
     CommonLogic.forgotToRenderIntervalCheck(
       focusedElem,
-      markdownHere,
+      sitthefuckdownHere,
       MdhHtmlToText,
       marked,
       forgotToRenderIntervalCheckPrefs);
@@ -270,7 +270,7 @@ setInterval(intervalCheck, 2000);
  */
 
 function showUpgradeNotification(html) {
-  if (document.querySelector('#markdown-here-upgrade-notification-content')) {
+  if (document.querySelector('#sitthefuckdown-here-upgrade-notification-content')) {
     return;
   }
 
@@ -281,7 +281,7 @@ function showUpgradeNotification(html) {
   // Note that `elem` is no longer valid after we call Utils.saferSetOuterHTML on it.
 
   // Add click handlers so that we can clear the notification.
-  var optionsLink = document.querySelector('#markdown-here-upgrade-notification-link');
+  var optionsLink = document.querySelector('#sitthefuckdown-here-upgrade-notification-link');
   optionsLink.addEventListener('click', function(event) {
     clearUpgradeNotification(true);
 
@@ -294,7 +294,7 @@ function showUpgradeNotification(html) {
     event.preventDefault();
   });
 
-  var closeLink = document.querySelector('#markdown-here-upgrade-notification-close');
+  var closeLink = document.querySelector('#sitthefuckdown-here-upgrade-notification-close');
   closeLink.addEventListener('click', function(event) {
     event.preventDefault();
     clearUpgradeNotification(true);
@@ -308,7 +308,7 @@ function clearUpgradeNotification(notifyBackgroundScript) {
       { action: 'upgrade-notification-shown' });
   }
 
-  var elem = document.querySelector('#markdown-here-upgrade-notification-content');
+  var elem = document.querySelector('#sitthefuckdown-here-upgrade-notification-content');
   if (elem) {
     document.body.removeChild(elem);
   }

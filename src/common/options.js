@@ -5,15 +5,15 @@
 
 "use strict";
 /*jshint browser:true, jquery:true, sub:true */
-/*global OptionsStore:false, chrome:false, markdownRender:false,
-  htmlToText:false, marked:false, hljs:false, markdownHere:false, Utils:false,
+/*global OptionsStore:false, chrome:false, sitthefuckdownRender:false,
+  htmlToText:false, marked:false, hljs:false, sitthefuckdownHere:false, Utils:false,
   MdhHtmlToText:false */
 
 /*
  * Main script file for the options page.
  */
 
-var cssEdit, cssSyntaxEdit, cssSyntaxSelect, rawMarkdownIframe, savedMsg,
+var cssEdit, cssSyntaxEdit, cssSyntaxSelect, rawSitthefuckdownIframe, savedMsg,
     mathEnable, mathEdit, hotkeyShift, hotkeyCtrl, hotkeyAlt, hotkeyKey,
     forgotToRenderCheckEnabled, headerAnchorsEnabled, gfmLineBreaksEnabled,
     loaded = false;
@@ -30,7 +30,7 @@ function onLoad() {
   cssEdit = document.getElementById('css-edit');
   cssSyntaxEdit = document.getElementById('css-syntax-edit');
   cssSyntaxSelect = document.getElementById('css-syntax-select');
-  rawMarkdownIframe = document.getElementById('rendered-markdown');
+  rawSitthefuckdownIframe = document.getElementById('rendered-sitthefuckdown');
   savedMsg = document.getElementById('saved-msg');
   mathEnable = document.getElementById('math-enable');
   mathEdit = document.getElementById('math-edit');
@@ -136,7 +136,7 @@ function previewIframeLoaded() {
   // Even though the IFrame is loaded, the page DOM might not be, so we don't
   // yet have a valid state. In that case, set a timer.
   if (loaded) {
-    renderMarkdown();
+    renderSitthefuckdown();
   }
   else {
     setTimeout(previewIframeLoaded, 100);
@@ -203,7 +203,7 @@ function showPlatformElements() {
 }
 
 
-// If the CSS changes and the Markdown compose box is rendered, update the
+// If the CSS changes and the Sitthefuckdown compose box is rendered, update the
 // rendering by toggling twice. If the compose box is not rendered, do nothing.
 // Groups changes together rather than on every keystroke.
 var lastOptions = '';
@@ -249,7 +249,7 @@ function checkChange() {
           'gfm-line-breaks-enabled': gfmLineBreaksEnabled.checked
         },
         function() {
-          updateMarkdownRender();
+          updateSitthefuckdownRender();
 
           // Show the "saved changes" message, unless this is the first save
           // (i.e., the one when the user first opens the options window).
@@ -270,34 +270,34 @@ function checkChange() {
 }
 
 // This function stolen entirely from contentscript.js and ff-overlay.js
-function requestMarkdownConversion(elem, range, callback) {
+function requestSitthefuckdownConversion(elem, range, callback) {
   var mdhHtmlToText = new MdhHtmlToText.MdhHtmlToText(elem, range);
 
   Utils.makeRequestToPrivilegedScript(
     document,
     { action: 'render', mdText: mdhHtmlToText.get() },
     function(response) {
-      var renderedMarkdown = mdhHtmlToText.postprocess(response.html);
-      callback(renderedMarkdown, response.css);
+      var renderedSitthefuckdown = mdhHtmlToText.postprocess(response.html);
+      callback(renderedSitthefuckdown, response.css);
     });
 }
 
-// Render the sample Markdown.
-function renderMarkdown(postRenderCallback) {
-  if (rawMarkdownIframe.contentDocument.querySelector('.markdown-here-wrapper')) {
+// Render the sample Sitthefuckdown.
+function renderSitthefuckdown(postRenderCallback) {
+  if (rawSitthefuckdownIframe.contentDocument.querySelector('.sitthefuckdown-here-wrapper')) {
     // Already rendered.
     if (postRenderCallback) postRenderCallback();
     return;
   }
 
   // Begin rendering.
-  markdownHere(rawMarkdownIframe.contentDocument, requestMarkdownConversionInterceptor);
+  sitthefuckdownHere(rawSitthefuckdownIframe.contentDocument, requestSitthefuckdownConversionInterceptor);
 
   // To figure out when the (asynchronous) rendering is complete -- so we
   // can call the `postRenderCallback` -- we'll intercept the callback used
   // by the rendering service.
 
-  function requestMarkdownConversionInterceptor(elem, range, callback) {
+  function requestSitthefuckdownConversionInterceptor(elem, range, callback) {
 
     function callbackInterceptor() {
       callback.apply(null, arguments);
@@ -307,34 +307,34 @@ function renderMarkdown(postRenderCallback) {
     }
 
     // Call the real rendering service.
-    requestMarkdownConversion(elem, range, callbackInterceptor);
+    requestSitthefuckdownConversion(elem, range, callbackInterceptor);
   }
 }
 
-// Re-render already-rendered sample Markdown.
-function updateMarkdownRender() {
-  if (!rawMarkdownIframe.contentDocument.querySelector('.markdown-here-wrapper')) {
+// Re-render already-rendered sample Sitthefuckdown.
+function updateSitthefuckdownRender() {
+  if (!rawSitthefuckdownIframe.contentDocument.querySelector('.sitthefuckdown-here-wrapper')) {
     // Not currently rendered, so nothing to update.
     return;
   }
 
   // To mitigate flickering, hide the iframe during rendering.
-  rawMarkdownIframe.style.visibility = 'hidden';
+  rawSitthefuckdownIframe.style.visibility = 'hidden';
 
   // Unrender
-  markdownHere(rawMarkdownIframe.contentDocument, requestMarkdownConversion);
+  sitthefuckdownHere(rawSitthefuckdownIframe.contentDocument, requestSitthefuckdownConversion);
 
   // Re-render
-  renderMarkdown(function() {
-    rawMarkdownIframe.style.visibility = 'visible';
+  renderSitthefuckdown(function() {
+    rawSitthefuckdownIframe.style.visibility = 'visible';
   });
 }
 
-// Toggle the render state of the sample Markdown.
-function markdownToggle() {
-  markdownHere(rawMarkdownIframe.contentDocument, requestMarkdownConversion);
+// Toggle the render state of the sample Sitthefuckdown.
+function sitthefuckdownToggle() {
+  sitthefuckdownHere(rawSitthefuckdownIframe.contentDocument, requestSitthefuckdownConversion);
 }
-document.querySelector('#markdown-toggle-button').addEventListener('click', markdownToggle, false);
+document.querySelector('#sitthefuckdown-toggle-button').addEventListener('click', sitthefuckdownToggle, false);
 
 // Reset the main CSS to default.
 function resetCssEdit() {

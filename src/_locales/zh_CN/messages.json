@@ -1,12 +1,12 @@
 {
   "app_name":{
-    "message":"Markdown Here",
+    "message":"Sitthefuckdown Here",
     "description":"the name of the extension",
     "inMozDTD":true
   },
   "app_slogan":{
-    "message":"用Markdown写一封漂亮的电子邮件。",
-    "description":"shown as subtitle for Markdown Here in the browser extensions list"
+    "message":"用Sitthefuckdown写一封漂亮的电子邮件。",
+    "description":"shown as subtitle for Sitthefuckdown Here in the browser extensions list"
   },
   "toggle_button_text":{
     "message":"转换",
@@ -14,51 +14,51 @@
     "inMozDTD":true
   },
   "toggle_button_tooltip":{
-    "message":"单击转换Markdown",
-    "description":"text shown when user hovers mouse over Markdown Toggle button",
+    "message":"单击转换Sitthefuckdown",
+    "description":"text shown when user hovers mouse over Sitthefuckdown Toggle button",
     "inMozDTD":true
   },
   "toggle_button_tooltip_disabled":{
-    "message":"选定的区域不支持Markdown转换",
-    "description":"text shown when user hover mouse over disabled Markdown Toggle button",
+    "message":"选定的区域不支持Sitthefuckdown转换",
+    "description":"text shown when user hover mouse over disabled Sitthefuckdown Toggle button",
     "inMozDTD":true
   },
   "context_menu_item":{
-    "message":"Markdown转换",
+    "message":"Sitthefuckdown转换",
     "description":"Text shown on the context menu.",
     "inMozDTD":true
   },
   "invalid_field":{
-    "message":"选定的区域不支持Markdown转换，请使用富文本编辑器。",
+    "message":"选定的区域不支持Sitthefuckdown转换，请使用富文本编辑器。",
     "description":"Shown in an alert dialog if the user tries to render a field that cannot be rendered"
   },
   "plain_text_compose":{
-    "message":"你正在使用纯文本编辑器，你必须使用富文本编辑器才能使用Markdown Here。",
+    "message":"你正在使用纯文本编辑器，你必须使用富文本编辑器才能使用Sitthefuckdown Here。",
     "description":"Shown in an alert dialog if the user has their email compose app set to plain text"
   },
   "cursor_into_compose":{
     "message":"请把光标定位在编辑区。"
   },
   "forgot_to_render_prompt_title":{
-    "message":"忘了转换Markdown?",
-    "description":"Title of the prompt that's shown when it's detected that a user may have forgotten to render the Markdown in their email"
+    "message":"忘了转换Sitthefuckdown?",
+    "description":"Title of the prompt that's shown when it's detected that a user may have forgotten to render the Sitthefuckdown in their email"
   },
   "forgot_to_render_prompt_info":{
-    "message":"你好像用Markdown写了这封电邮，但却忘了让它变得更漂亮。",
-    "description":"Informational part of the prompt that's shown when it's detected that a user may have forgotten to render the Markdown in their email"
+    "message":"你好像用Sitthefuckdown写了这封电邮，但却忘了让它变得更漂亮。",
+    "description":"Informational part of the prompt that's shown when it's detected that a user may have forgotten to render the Sitthefuckdown in their email"
   },
   "forgot_to_render_prompt_question":{
     "message":"坚持发送?",
-    "description":"Question part of the prompt that's shown when it's detected that a user may have forgotten to render the Markdown in their email"
+    "description":"Question part of the prompt that's shown when it's detected that a user may have forgotten to render the Sitthefuckdown in their email"
   },
   "forgot_to_render_back_button":{
     "message":"返回",
-    "description":"Text on the Back (cancel) button of the prompt that's shown when it's detected that a user may have forgotten to render the Markdown in their email",
+    "description":"Text on the Back (cancel) button of the prompt that's shown when it's detected that a user may have forgotten to render the Sitthefuckdown in their email",
     "inMozDTD":true
   },
   "forgot_to_render_send_button":{
     "message":"发送",
-    "description":"Text on the Send (continue) button of the prompt that's shown when it's detected that a user may have forgotten to render the Markdown in their email",
+    "description":"Text on the Send (continue) button of the prompt that's shown when it's detected that a user may have forgotten to render the Sitthefuckdown in their email",
     "inMozDTD":true
   },
   "forgot_to_render_prompt_close_hover":{
@@ -66,8 +66,8 @@
     "description":"Text that shows when the user hovers over the 'X' that will close the prompt"
   },
   "upgrade_notification_text":{
-    "message":"Markdown Here已更新",
-    "description":"Text on the notification shown when Markdown Here has been updated"
+    "message":"Sitthefuckdown Here已更新",
+    "description":"Text on the notification shown when Sitthefuckdown Here has been updated"
   },
   "upgrade_notification_changes_tooltip":{
     "message":"单击查看这个版本的更新日志",
@@ -81,12 +81,12 @@
     "message":"没有可转换或可恢复的内容",
     "description":"Error message shown to user if there's nothing found to revert or render."
   },
-  "unrendering_modified_markdown_warning":{
-    "message":"已转换的Markdown内容好像有了新改动.\n如果你再次转换它，新改动的内容会丢失。\n\n你确定要转换吗?",
-    "description":"Warning shown to the user if she tries to revert some rendered Markdown that they've modified since rendering. The user will lose their modifications if they proceed."
+  "unrendering_modified_sitthefuckdown_warning":{
+    "message":"已转换的Sitthefuckdown内容好像有了新改动.\n如果你再次转换它，新改动的内容会丢失。\n\n你确定要转换吗?",
+    "description":"Warning shown to the user if she tries to revert some rendered Sitthefuckdown that they've modified since rendering. The user will lose their modifications if they proceed."
   },
   "options_page__page_title":{
-    "message":"Markdown Here选项"
+    "message":"Sitthefuckdown Here选项"
   },
   "options_page__basic_usage":{
     "message":"基本用法"
@@ -99,12 +99,12 @@
     "message":"开始写一封新的电邮。",
     "description":"A step in the basic usage instructions"
   },
-  "options_page__type_some_markdown":{
-    "message":"在你的电邮里输入一些Markdown内容.<br\/>试试这个: <code>_Hello_ `Markdown` **Here**!<\/code>",
+  "options_page__type_some_sitthefuckdown":{
+    "message":"在你的电邮里输入一些Sitthefuckdown内容.<br\/>试试这个: <code>_Hello_ `Sitthefuckdown` **Here**!<\/code>",
     "description":"A step in the basic usage instructions"
   },
   "options_page__click_toggle":{
-    "message":"在你的电子邮件上右击然后选择\"Markdown转换\". (或者单击扩展工具栏上的<img src=\"images\/icon16.png\"\/>按钮。<span class=\"hotkey-display-wrapper\"> 也可以试试快捷键 <span class=\"hotkey-display\"><kbd>CTRL<\/kbd>+<kbd>ALT<\/kbd>+<kbd>M<\/kbd><\/span><\/span>)",
+    "message":"在你的电子邮件上右击然后选择\"Sitthefuckdown转换\". (或者单击扩展工具栏上的<img src=\"images\/icon16.png\"\/>按钮。<span class=\"hotkey-display-wrapper\"> 也可以试试快捷键 <span class=\"hotkey-display\"><kbd>CTRL<\/kbd>+<kbd>ALT<\/kbd>+<kbd>M<\/kbd><\/span><\/span>)",
     "description":"A step in the basic usage instructions"
   },
   "options_page__pretty_cool":{
@@ -116,31 +116,31 @@
     "description":"A section title"
   },
   "options_page__resources_cheatsheet_link":{
-    "message":"如果你刚开始接触Markdown， <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/wiki\/Markdown-Here-Cheatsheet\" target=\"_blank\">Markdown Here Cheatsheet<\/a> 是本不错的入门手册."
+    "message":"如果你刚开始接触Sitthefuckdown， <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/wiki\/Sitthefuckdown-Here-Cheatsheet\" target=\"_blank\">Sitthefuckdown Here Cheatsheet<\/a> 是本不错的入门手册."
   },
   "options_page__advanced_usage":{
-    "message":"如果要查看更多信息和用法，参见 <a href=\"https:\/\/github.com\/adam-p\/markdown-here\" target=\"_blank\">Markdown Here项目主页<\/a>. 你会在下方看到选项."
+    "message":"如果要查看更多信息和用法，参见 <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\" target=\"_blank\">Sitthefuckdown Here项目主页<\/a>. 你会在下方看到选项."
   },
   "options_page__ggroup":{
-    "message":"资询， 讨论，或者只是和同道中人打个招呼，戳 <a href=\"https:\/\/groups.google.com\/forum\/?fromgroups=#!forum\/markdown-here\" target=\"_blank\">markdown-here Google Group<\/a>."
+    "message":"资询， 讨论，或者只是和同道中人打个招呼，戳 <a href=\"https:\/\/groups.google.com\/forum\/?fromgroups=#!forum\/sitthefuckdown-here\" target=\"_blank\">sitthefuckdown-here Google Group<\/a>."
   },
   "options_page__mdh_wiki":{
-    "message":"访问 <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/wiki\" target=\"_blank\">Markdown Here wiki<\/a> 以查看 <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/wiki\/Compatibility\" target=\"_blank\">MDH适用的服务<\/a> 以及更多 <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/wiki\/Tips-and-Tricks\" target=\"_blank\">使用提示和窍门<\/a>."
+    "message":"访问 <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/wiki\" target=\"_blank\">Sitthefuckdown Here wiki<\/a> 以查看 <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/wiki\/Compatibility\" target=\"_blank\">MDH适用的服务<\/a> 以及更多 <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/wiki\/Tips-and-Tricks\" target=\"_blank\">使用提示和窍门<\/a>."
   },
   "options_page__next_steps":{
-    "message":"如果你对Markdown Here的未来发展感兴趣, 查看 <a href=\"https:\/\/github.com\/adam-p\/markdown-here#next-steps\" target=\"_blank\">README的Next Steps部分<\/a>。"
+    "message":"如果你对Sitthefuckdown Here的未来发展感兴趣, 查看 <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here#next-steps\" target=\"_blank\">README的Next Steps部分<\/a>。"
   },
   "options_page__donate_plea_1":{
-    "message":"一旦你发现Markdown Here相当不错，请帮助我给我妻子买一些鲜花，这样她也不会为我在此花的大量工作而感到沮丧。 <strong>谢谢！<\/strong>"
+    "message":"一旦你发现Sitthefuckdown Here相当不错，请帮助我给我妻子买一些鲜花，这样她也不会为我在此花的大量工作而感到沮丧。 <strong>谢谢！<\/strong>"
   },
   "options_page__donate_plea_2":{
-    "message":"<strong>帮助Markdown Here变的更好!<\/strong>"
+    "message":"<strong>帮助Sitthefuckdown Here变的更好!<\/strong>"
   },
   "options_page__donate_plea_3":{
-    "message":"<strong>帮助支持Markdown Here的发展!<\/strong>"
+    "message":"<strong>帮助支持Sitthefuckdown Here的发展!<\/strong>"
   },
   "options_page__donate_plea_4":{
-    "message":"你知道怎么让Markdown Here能够在Chrome，Firefox，Thunderbird，Postbox，Safari，Opera，Gmail，Yahoo，Hotmail，Blogger，Evernote等平台中工作吗？\n<strong>Coffee!<\/strong>"
+    "message":"你知道怎么让Sitthefuckdown Here能够在Chrome，Firefox，Thunderbird，Postbox，Safari，Opera，Gmail，Yahoo，Hotmail，Blogger，Evernote等平台中工作吗？\n<strong>Coffee!<\/strong>"
   },
   "options_page__other_donation_options":{
     "message":"其它捐赠选项",
@@ -164,11 +164,11 @@
   },
   "options_page__preview_title":{
     "message":"预览",
-    "description":"section title for the Markdown preview section"
+    "description":"section title for the Sitthefuckdown preview section"
   },
-  "options_page__markdown_toggle_button_text":{
-    "message":"Markdown转换",
-    "description":"button text for Markdown Toggle button"
+  "options_page__sitthefuckdown_toggle_button_text":{
+    "message":"Sitthefuckdown转换",
+    "description":"button text for Sitthefuckdown Toggle button"
   },
   "options_page__notes_title":{
     "message":"注意",
@@ -286,23 +286,23 @@
     "message":"目前只支持Gmail网页版和Thunderbird (还有Postbox 和 Icedove)."
   },
   "options_page__forgot_to_render_2":{
-    "message":"当你发送电邮时, 这个选项会检查邮件内容是不是未转换的Markdown. 这可能会干扰你正常发送邮件."
+    "message":"当你发送电邮时, 这个选项会检查邮件内容是不是未转换的Sitthefuckdown. 这可能会干扰你正常发送邮件."
   },
   "options_page__forgot_to_render_3":{
-    "message":"如果你禁用了此项, <em>请<\/em> 告知我为什么和如何做更好. Create <a href=\"https:\/\/groups.google.com\/forum\/#!forum\/markdown-here\" target=\"_blank\">a post on the \"markdown-here\" Google Group<\/a> or <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/issues\" target=\"_blank\">an issue in the Github project<\/a>. 谢谢."
+    "message":"如果你禁用了此项, <em>请<\/em> 告知我为什么和如何做更好. Create <a href=\"https:\/\/groups.google.com\/forum\/#!forum\/sitthefuckdown-here\" target=\"_blank\">a post on the \"sitthefuckdown-here\" Google Group<\/a> or <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/issues\" target=\"_blank\">an issue in the Github project<\/a>. 谢谢."
   },
   "options_page__contributing_title":{
     "message":"贡献",
     "description":"A section title"
   },
   "options_page__contributing_1":{
-    "message":"<strong>如果你曾经把一个代码块写进电子邮件，你就可以帮助Markdown Here做的更好.<\/strong> <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/blob\/master\/CONTRIBUTING.md\" target=\"_blank\">CONTRIBUTING.md<\/a>"
+    "message":"<strong>如果你曾经把一个代码块写进电子邮件，你就可以帮助Sitthefuckdown Here做的更好.<\/strong> <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/blob\/master\/CONTRIBUTING.md\" target=\"_blank\">CONTRIBUTING.md<\/a>"
   },
   "options_page__contributing_2":{
-    "message":"帮助翻译Markdown Here. <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/blob\/master\/CONTRIBUTING.md#translation\" target=\"_blank\">欢迎翻译.<\/a>"
+    "message":"帮助翻译Sitthefuckdown Here. <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/blob\/master\/CONTRIBUTING.md#translation\" target=\"_blank\">欢迎翻译.<\/a>"
   },
   "options_page__footer_1":{
-    "message":"<em>Markdown Here<\/em> 是开源的. 要提问, 报告错误, 请求新特性, 或参与开发, 访问 <a target=\"_blank\" href=\"https:\/\/github.com\/adam-p\/markdown-here\">Github项目主页<\/a> 或 <a target=\"_blank\" href=\"https:\/\/groups.google.com\/forum\/?fromgroups=#!forum\/markdown-here\">\"markdown-here\" Google Group<\/a>.",
+    "message":"<em>Sitthefuckdown Here<\/em> 是开源的. 要提问, 报告错误, 请求新特性, 或参与开发, 访问 <a target=\"_blank\" href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\">Github项目主页<\/a> 或 <a target=\"_blank\" href=\"https:\/\/groups.google.com\/forum\/?fromgroups=#!forum\/sitthefuckdown-here\">\"sitthefuckdown-here\" Google Group<\/a>.",
     "description":"part of the page footer text"
   },
   "options_page__footer_2":{
@@ -313,9 +313,9 @@
     "message":"已保存",
     "description":"message that shows when user changes have been saved"
   },
-  "options_page__preview_markdown":{
-    "message":"```javascript<br>\nfunction syntaxHighlighting() {<br>\n&nbsp; var n = 33;<br>\n&nbsp; var s = \"hello, こんにちは\";<br>\n&nbsp; console.log(s);<br>\n}<br>\n```<br>\n<br>\n* plain<br>\n* *emphasis*<br>\n&nbsp; * **strong emphasis**<br>\n&nbsp; &nbsp; * ~~strikethrough~~<br>\n* `inline code`<br>\n<br>\n1. Numbered list<br>\n&nbsp;&nbsp;&nbsp;1. Numbered sub-list<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Numbered sub-sub-list<br>\n2. [Link](https:\/\/www.google.com)<br>\n<br>\n<br>\nAn image: ![Markdown Here logo](https:\/\/raw.githubusercontent.com\/adam-p\/markdown-here\/master\/src\/common\/images\/icon24.png)\n<br>\n<br>\n> Block quote.&nbsp; <br>\n> *With* **some** `markdown`.<br>\n<br>\nIf **TeX Math** support is enabled, this is the quadratic equation:&nbsp;<br>\n$$-b \\pm \\sqrt{b^2 - 4ac} \\over 2a$$<br>\n<br>\n# Header 1<br>\n## Header 2<br>\n### Header 3<br>\n#### Header 4<br>\n##### Header 5<br>\n###### Header 6<br>\n&nbsp; <br>\n| Tables        | Are           | Cool  |<br>\n| ------------- |:-------------:| -----:|<br>\n| column 3 is   | right-aligned | $$1600 |<br>\n| column 2 is   | centered      |   $$12 |<br>\n| zebra stripes | are neat      |    $$1 |<br>\n<br>\nHere's a horizontal rule:<br>\n<br>\n---<br>\n<br>\n```<br>\ncode block<br>\nwith no highlighting<br>\n```<br>\n<br>\n",
-    "description":"This doesn't need to be translated, unless you want to make it more relevant to your language. The raw Markdown used for previewing user styling changes. Also shows users what can be done with Markdown. Please note that the double dollar signs ($$) are needed to make a single dollar sign in the application."
+  "options_page__preview_sitthefuckdown":{
+    "message":"```javascript<br>\nfunction syntaxHighlighting() {<br>\n&nbsp; var n = 33;<br>\n&nbsp; var s = \"hello, こんにちは\";<br>\n&nbsp; console.log(s);<br>\n}<br>\n```<br>\n<br>\n* plain<br>\n* *emphasis*<br>\n&nbsp; * **strong emphasis**<br>\n&nbsp; &nbsp; * ~~strikethrough~~<br>\n* `inline code`<br>\n<br>\n1. Numbered list<br>\n&nbsp;&nbsp;&nbsp;1. Numbered sub-list<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Numbered sub-sub-list<br>\n2. [Link](https:\/\/www.google.com)<br>\n<br>\n<br>\nAn image: ![Sitthefuckdown Here logo](https:\/\/raw.githubusercontent.com\/adam-p\/sitthefuckdown-here\/master\/src\/common\/images\/icon24.png)\n<br>\n<br>\n> Block quote.&nbsp; <br>\n> *With* **some** `sitthefuckdown`.<br>\n<br>\nIf **TeX Math** support is enabled, this is the quadratic equation:&nbsp;<br>\n$$-b \\pm \\sqrt{b^2 - 4ac} \\over 2a$$<br>\n<br>\n# Header 1<br>\n## Header 2<br>\n### Header 3<br>\n#### Header 4<br>\n##### Header 5<br>\n###### Header 6<br>\n&nbsp; <br>\n| Tables        | Are           | Cool  |<br>\n| ------------- |:-------------:| -----:|<br>\n| column 3 is   | right-aligned | $$1600 |<br>\n| column 2 is   | centered      |   $$12 |<br>\n| zebra stripes | are neat      |    $$1 |<br>\n<br>\nHere's a horizontal rule:<br>\n<br>\n---<br>\n<br>\n```<br>\ncode block<br>\nwith no highlighting<br>\n```<br>\n<br>\n",
+    "description":"This doesn't need to be translated, unless you want to make it more relevant to your language. The raw Sitthefuckdown used for previewing user styling changes. Also shows users what can be done with Sitthefuckdown. Please note that the double dollar signs ($$) are needed to make a single dollar sign in the application."
   },
   "currently_in_use":{
     "message":"目前使用",
@@ -327,16 +327,16 @@
   },
   "options_page__header_anchors_enabled_label":{
     "message":"<b>自动设置标题锚点.<\/b>",
-    "description":"Label for the checkbox that enables the automatic header anchors feature. This means that an 'anchor' is created at every heading (H1, H2, etc.) in the user's Markdown. The user can then create links that will jump to these anchors, like in the table of contents of a document."
+    "description":"Label for the checkbox that enables the automatic header anchors feature. This means that an 'anchor' is created at every heading (H1, H2, etc.) in the user's Sitthefuckdown. The user can then create links that will jump to these anchors, like in the table of contents of a document."
   },
   "options_page__header_anchors_enabled_1":{
-    "message":"如果你想把一个表的内容或其他内部链接加入到你的内容中，这会很有用. <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/wiki\/Tips-and-Tricks#wiki-header-anchors\" target=\"_blank\">在MDH wiki中查看如何使用.<\/a>"
+    "message":"如果你想把一个表的内容或其他内部链接加入到你的内容中，这会很有用. <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/wiki\/Tips-and-Tricks#wiki-header-anchors\" target=\"_blank\">在MDH wiki中查看如何使用.<\/a>"
   },
   "options_page__header_anchors_enabled_2":{
-    "message":"默认禁用，因为它会 <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/issues\/155\" target=\"_blank\">在Thunderbird产生视觉干扰<\/a>. (况且大多数人用不到.)"
+    "message":"默认禁用，因为它会 <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/issues\/155\" target=\"_blank\">在Thunderbird产生视觉干扰<\/a>. (况且大多数人用不到.)"
   },
   "options_page__gfm_line_breaks_enabled_label":{
     "message":"<b>启用GFM换行。<\/b>",
-    "description":"Label for the checkbox that enables the support of 'Github-flavored Markdown' line breaks."
+    "description":"Label for the checkbox that enables the support of 'Github-flavored Sitthefuckdown' line breaks."
   }
 }
