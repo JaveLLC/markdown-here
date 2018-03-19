@@ -150,7 +150,7 @@
         <em:description>Write your email in Sitthefuckdown, then make it pretty.</em:description>
 
         <em:iconURL>resource://sitthefuckdown_here_common/images/icon128.png</em:iconURL>
-        <em:homepageURL>https://github.com/adam-p/sitthefuckdown-here</em:homepageURL>
+        <em:homepageURL>https://github.com/javellc/sitthefuckdown-here</em:homepageURL>
 
         <em:optionsType>1</em:optionsType>
         <em:optionsURL>chrome://sitthefuckdown_here/content/options.xul</em:optionsURL>

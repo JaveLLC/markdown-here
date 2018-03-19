@@ -17,7 +17,7 @@ HTML decoding functionality provided by: http://code.google.com/p/google-trekker
 */
 
 /*
-adam-p: modified to be a module
+javellc: modified to be a module
 */
 
 ;(function() {
@@ -82,7 +82,7 @@ function htmlToText(html, extensions) {
         // Decode HTML entities.
         .replace(/&([^;]+);/g, decodeHtmlEntity);
 
-    /* adam-p: make trailing whitespace stripping optional */
+    /* javellc: make trailing whitespace stripping optional */
 
     if (!extensions || !extensions['allowTrailingWhitespace']) {
       text = text

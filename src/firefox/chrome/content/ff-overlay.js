@@ -18,7 +18,7 @@ var sitthefuckdown_here = {
 
   // Components.utils is somewhat more performant than mozIJSSubScriptLoader,
   // but it doesn't expose the global `window` to the code, which introduces
-  // tons of headaches (see https://github.com/adam-p/sitthefuckdown-here/issues/141).
+  // tons of headaches (see https://github.com/javellc/sitthefuckdown-here/issues/141).
   // The correct way to deal with that is probably to pass `window` into every
   // single call, but that seems onerous.
   // For details on the difference, see:

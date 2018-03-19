@@ -20,4 +20,4 @@ Sitthefuckdown Here主要針對Gmail與Thunderbird，但是也能在Yahoo與Hotm
 這是開源專案。 瀏覽Sitthefuckdown Here的Github網頁來獲得使用手冊、更多資訊、回報問題，或是貢獻。
 
 http://sitthefuckdown-here.com
-https://github.com/adam-p/sitthefuckdown-here
+https://github.com/javellc/sitthefuckdown-here

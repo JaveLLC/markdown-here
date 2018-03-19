@@ -31,14 +31,14 @@ describe('Sitthefuckdown-Render', function() {
       expect(SitthefuckdownRender.sitthefuckdownRender('', userprefs, marked, hljs)).to.equal('');
     });
 
-    // Test the fix for https://github.com/adam-p/sitthefuckdown-here/issues/51
+    // Test the fix for https://github.com/javellc/sitthefuckdown-here/issues/51
     it('should correctly handle links with URL text', function() {
       var s = '[http://example1.com](http://example2.com)';
       var target = '<a href="http://example2.com">http://example1.com</a>';
       expect(SitthefuckdownRender.sitthefuckdownRender(s, userprefs, marked, hljs)).to.contain(target);
     });
 
-    // Test the fix for https://github.com/adam-p/sitthefuckdown-here/issues/51
+    // Test the fix for https://github.com/javellc/sitthefuckdown-here/issues/51
     it('should quite correctly handle pre-formatted links with URL text', function() {
       var s = '<a href="http://example1.com">http://example2.com</a>';
       var target = '<a href="http://example1.com">http://example2.com</a>';
@@ -50,7 +50,7 @@ describe('Sitthefuckdown-Render', function() {
       expect(SitthefuckdownRender.sitthefuckdownRender(s, userprefs, marked, hljs)).to.contain(s);
     });
 
-    // Test issue #57: https://github.com/adam-p/sitthefuckdown-here/issues/57
+    // Test issue #57: https://github.com/javellc/sitthefuckdown-here/issues/57
     it('should add the schema to links missing it', function() {
       var md = 'asdf [aaa](bbb) asdf [ccc](ftp://ddd) asdf';
       var target = '<p>asdf <a href="http://bbb">aaa</a> asdf <a href="ftp://ddd">ccc</a> asdf</p>\n';
@@ -63,14 +63,14 @@ describe('Sitthefuckdown-Render', function() {
       expect(SitthefuckdownRender.sitthefuckdownRender(md, userprefs, marked, hljs)).to.equal(target);
     });
 
-    // Test issue #87: https://github.com/adam-p/sitthefuckdown-here/issues/87
+    // Test issue #87: https://github.com/javellc/sitthefuckdown-here/issues/87
     it('should smartypants apostrophes properly', function() {
       var md = "Adam's parents' place";
       var target = '<p>Adam\u2019s parents\u2019 place</p>\n';
       expect(SitthefuckdownRender.sitthefuckdownRender(md, userprefs, marked, hljs)).to.equal(target);
     });
 
-    // Test issue #83: https://github.com/adam-p/sitthefuckdown-here/issues/83
+    // Test issue #83: https://github.com/javellc/sitthefuckdown-here/issues/83
     it('should not alter MD-link-looking text in code blocks', function() {
       var md = '`[a](b)`';
       var target = '<p><code>[a](b)</code></p>\n';
@@ -82,7 +82,7 @@ describe('Sitthefuckdown-Render', function() {
     });
 
     // Test issue #84: Math: single-character formula won't render
-    // https://github.com/adam-p/sitthefuckdown-here/issues/84
+    // https://github.com/javellc/sitthefuckdown-here/issues/84
     it('should render single-character math formulae', function() {
       userprefs = {
         'math-value': '<img class="mdh-math" src="https://chart.googleapis.com/chart?cht=tx&chl={urlmathcode}" alt="{mathcode}">',
@@ -106,7 +106,7 @@ describe('Sitthefuckdown-Render', function() {
       expect(SitthefuckdownRender.sitthefuckdownRender(md, userprefs, marked, hljs)).to.equal(target);
     });
 
-    // Test issue #93: Add support for anchor links: https://github.com/adam-p/sitthefuckdown-here/issues/93
+    // Test issue #93: Add support for anchor links: https://github.com/javellc/sitthefuckdown-here/issues/93
     it('should add anchors to headers if enabled', function() {
       userprefs['header-anchors-enabled'] = true;
       var md = '# Header Number 1\n\n###### Header Number 6';
@@ -114,7 +114,7 @@ describe('Sitthefuckdown-Render', function() {
       expect(SitthefuckdownRender.sitthefuckdownRender(md, userprefs, marked, hljs)).to.equal(target);
     });
 
-    // Test issue #93: Add support for anchor links: https://github.com/adam-p/sitthefuckdown-here/issues/93
+    // Test issue #93: Add support for anchor links: https://github.com/javellc/sitthefuckdown-here/issues/93
     it('should convert anchor links to point to header auto-anchors', function() {
       userprefs['header-anchors-enabled'] = true;
       var md = '[H1](#Header Number 1)\n[H6](#Header Number 6)';
@@ -122,7 +122,7 @@ describe('Sitthefuckdown-Render', function() {
       expect(SitthefuckdownRender.sitthefuckdownRender(md, userprefs, marked, hljs)).to.equal(target);
     });
 
-    // Test issue #93: Add support for anchor links: https://github.com/adam-p/sitthefuckdown-here/issues/93
+    // Test issue #93: Add support for anchor links: https://github.com/javellc/sitthefuckdown-here/issues/93
     it('should handle non-alphanumeric characters in headers', function() {
       userprefs['header-anchors-enabled'] = true;
       var md = '[H1](#a&b!c*d_f)\n# a&b!c*d_f';
@@ -130,28 +130,28 @@ describe('Sitthefuckdown-Render', function() {
       expect(SitthefuckdownRender.sitthefuckdownRender(md, userprefs, marked, hljs)).to.equal(target);
     });
 
-    // Test issue #112: Syntax Highlighting crashing rendering on bad language name: https://github.com/adam-p/sitthefuckdown-here/issues/112
+    // Test issue #112: Syntax Highlighting crashing rendering on bad language name: https://github.com/javellc/sitthefuckdown-here/issues/112
     it('should properly render code with good language names', function() {
       var md = '```sql\nSELECT * FROM table WHERE id = 1\n```';
       var target = '<pre><code class="hljs language-sql"><span class="hljs-operator"><span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">table</span> <span class="hljs-keyword">WHERE</span> id = <span class="hljs-number">1</span></span>\n</code></pre>\n';
       expect(SitthefuckdownRender.sitthefuckdownRender(md, userprefs, marked, hljs)).to.equal(target);
     });
 
-    // Test issue #112: Syntax Highlighting crashing rendering on bad language name: https://github.com/adam-p/sitthefuckdown-here/issues/112
+    // Test issue #112: Syntax Highlighting crashing rendering on bad language name: https://github.com/javellc/sitthefuckdown-here/issues/112
     it('should properly render code with good language names that are in the wrong (upper)case', function() {
       var md = '```SQL\nSELECT * FROM table WHERE id = 1\n```';
       var target = '<pre><code class="hljs language-SQL"><span class="hljs-operator"><span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">table</span> <span class="hljs-keyword">WHERE</span> id = <span class="hljs-number">1</span></span>\n</code></pre>\n';
       expect(SitthefuckdownRender.sitthefuckdownRender(md, userprefs, marked, hljs)).to.equal(target);
     });
 
-    // Test issue #112: Syntax Highlighting crashing rendering on bad language name: https://github.com/adam-p/sitthefuckdown-here/issues/112
+    // Test issue #112: Syntax Highlighting crashing rendering on bad language name: https://github.com/javellc/sitthefuckdown-here/issues/112
     it('should properly render code with unsupported language names', function() {
       var md = '```badlang\nSELECT * FROM table WHERE id = 1\n```';
       var target = '<pre><code class="hljs language-badlang">SELECT * FROM table WHERE id = 1\n</code></pre>\n';
       expect(SitthefuckdownRender.sitthefuckdownRender(md, userprefs, marked, hljs)).to.equal(target);
     });
 
-    // Test issue #132: https://github.com/adam-p/sitthefuckdown-here/issues/132
+    // Test issue #132: https://github.com/javellc/sitthefuckdown-here/issues/132
     // Smart arrow
     it('should render smart arrows', function() {
       var md = '--> <-- <--> ==> <== <==>';
@@ -210,7 +210,7 @@ describe('Sitthefuckdown-Render', function() {
       expect(fullRender('')).to.equal('');
     });
 
-    // Check fix for https://github.com/adam-p/sitthefuckdown-here/issues/51, which
+    // Check fix for https://github.com/javellc/sitthefuckdown-here/issues/51, which
     it('should correctly handle links with URL text', function() {
       var s = '[http://example1.com](http://example2.com)';
       var target = '<a href="http://example2.com">http://example1.com</a>';
@@ -228,7 +228,7 @@ describe('Sitthefuckdown-Render', function() {
       expect(fullRender(s)).to.contain(s);
     });
 
-    // Test that issue #69 hasn't come back: https://github.com/adam-p/sitthefuckdown-here/issues/69
+    // Test that issue #69 hasn't come back: https://github.com/javellc/sitthefuckdown-here/issues/69
     it('should properly render MD links that contain pre-formatted HTML links', function() {
       var tests = [], i;
 
@@ -285,7 +285,7 @@ describe('Sitthefuckdown-Render', function() {
       }
     });
 
-    // Test issue #57: https://github.com/adam-p/sitthefuckdown-here/issues/57
+    // Test issue #57: https://github.com/javellc/sitthefuckdown-here/issues/57
     it('should add the schema to links missing it', function() {
       var md = 'asdf [aaa](bbb) asdf [ccc](ftp://ddd) asdf';
       var target = '<p>asdf <a href="http://bbb">aaa</a> asdf <a href="ftp://ddd">ccc</a> asdf</p>\n';
@@ -298,14 +298,14 @@ describe('Sitthefuckdown-Render', function() {
       expect(fullRender(md)).to.equal(target);
     });
 
-    // Test issue #87: https://github.com/adam-p/sitthefuckdown-here/issues/87
+    // Test issue #87: https://github.com/javellc/sitthefuckdown-here/issues/87
     it('should smartypants apostrophes properly', function() {
       var md = "Adam's parents' place";
       var target = '<p>Adam\u2019s parents\u2019 place</p>\n';
       expect(fullRender(md)).to.equal(target);
     });
 
-    // Test issue #83: https://github.com/adam-p/sitthefuckdown-here/issues/83
+    // Test issue #83: https://github.com/javellc/sitthefuckdown-here/issues/83
     it('should not alter MD-link-looking text in code blocks', function() {
       var md = '`[a](b)`';
       var target = '<p><code>[a](b)</code></p>\n';
@@ -317,7 +317,7 @@ describe('Sitthefuckdown-Render', function() {
     });
 
     // Test issue #84: Math: single-character formula won't render
-    // https://github.com/adam-p/sitthefuckdown-here/issues/84
+    // https://github.com/javellc/sitthefuckdown-here/issues/84
     it('should render single-character math formulae', function() {
       userprefs = {
         'math-value': '<img class="mdh-math" src="https://chart.googleapis.com/chart?cht=tx&chl={urlmathcode}" alt="{mathcode}">',

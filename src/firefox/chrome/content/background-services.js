@@ -144,7 +144,7 @@ function prefsAccessRequestHandler(request) {
       // All of our legitimate prefs should be strings, but issue #237 suggests
       // that things may sometimes get into a bad state. We will check and delete
       // and prefs that aren't strings.
-      // https://github.com/adam-p/sitthefuckdown-here/issues/237
+      // https://github.com/javellc/sitthefuckdown-here/issues/237
       if (extPrefsBranch.getPrefType(prefKeys[i]) !== extPrefsBranch.PREF_STRING) {
         extPrefsBranch.clearUserPref(prefKeys[i]);
         continue;

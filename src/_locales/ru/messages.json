@@ -116,19 +116,19 @@
     "description":"A section title"
   },
   "options_page__resources_cheatsheet_link":{
-    "message":"Если вы новичок в Sitthefuckdown, то эта <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/wiki\/Sitthefuckdown-Here-Cheatsheet\" target=\"_blank\"> Sitthefuckdown Here шпаргалка<\/a> сделает вас настоящим про."
+    "message":"Если вы новичок в Sitthefuckdown, то эта <a href=\"https:\/\/github.com\/javellc\/sitthefuckdown-here\/wiki\/Sitthefuckdown-Here-Cheatsheet\" target=\"_blank\"> Sitthefuckdown Here шпаргалка<\/a> сделает вас настоящим про."
   },
   "options_page__advanced_usage":{
-    "message":"Для получения более подробной информации о проекте и о продвинутом использовании посетите <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\" target=\"_blank\">страницу проекта Sitthefuckdown Here<\/a>. Tакже изучитe варианты ниже."
+    "message":"Для получения более подробной информации о проекте и о продвинутом использовании посетите <a href=\"https:\/\/github.com\/javellc\/sitthefuckdown-here\" target=\"_blank\">страницу проекта Sitthefuckdown Here<\/a>. Tакже изучитe варианты ниже."
   },
   "options_page__ggroup":{
     "message":"Задать вопрос, начать обсуждение или просто сказать 'привет' можно тут <a href=\"https:\/\/groups.google.com\/forum\/?fromgroups=#!forum\/sitthefuckdown-here\" target=\"_blank\">sitthefuckdown-here Google Group<\/a>."
   },
   "options_page__mdh_wiki":{
-    "message":"Посетите <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/wiki\" target=\"_blank\"> Sitthefuckdown Here wiki<\/a> чтобы узнать <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/wiki\/Compatibility\" target=\"_blank\"> где MDH работает еще<\/a>, а также почитайте полезные <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/wiki\/Tips-and-Tricks\" target=\"_blank\"> советы и хитрости<\/a>."
+    "message":"Посетите <a href=\"https:\/\/github.com\/javellc\/sitthefuckdown-here\/wiki\" target=\"_blank\"> Sitthefuckdown Here wiki<\/a> чтобы узнать <a href=\"https:\/\/github.com\/javellc\/sitthefuckdown-here\/wiki\/Compatibility\" target=\"_blank\"> где MDH работает еще<\/a>, а также почитайте полезные <a href=\"https:\/\/github.com\/javellc\/sitthefuckdown-here\/wiki\/Tips-and-Tricks\" target=\"_blank\"> советы и хитрости<\/a>."
   },
   "options_page__next_steps":{
-    "message":"Если вас интересуют дальнейшие планы Sitthefuckdown Here, посетите  <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here#next-steps\" target=\"_blank\">раздел Next Steps<\/a> документа README."
+    "message":"Если вас интересуют дальнейшие планы Sitthefuckdown Here, посетите  <a href=\"https:\/\/github.com\/javellc\/sitthefuckdown-here#next-steps\" target=\"_blank\">раздел Next Steps<\/a> документа README."
   },
   "options_page__donate_plea_1":{
     "message":"Если вам нравится Sitthefuckdown Here ,то, пожалуйста, помогите мне купить цветы для моей жены, чтобы она не была слишком расстроена тем, что я провожу столько времени работая над проектом.<strong>Спасибо!<\/strong>"
@@ -289,24 +289,24 @@
     "message":"When you send an email, this checks the content to see if it looks like you wrote it in Sitthefuckdown, but forgot to render it (i.e., click \"Sitthefuckdown Toggle\") before sending. This may need to be disabled if it interferes with your ability to send email."
   },
   "options_page__forgot_to_render_3":{
-    "message":"If you find yourself disabling this, <em>please<\/em> let me know why and how it could be better. Create <a href=\"https:\/\/groups.google.com\/forum\/#!forum\/sitthefuckdown-here\" target=\"_blank\">a post on the \"sitthefuckdown-here\" Google Group<\/a> or <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/issues\" target=\"_blank\">an issue in the Github project<\/a>. Thanks."
+    "message":"If you find yourself disabling this, <em>please<\/em> let me know why and how it could be better. Create <a href=\"https:\/\/groups.google.com\/forum\/#!forum\/sitthefuckdown-here\" target=\"_blank\">a post on the \"sitthefuckdown-here\" Google Group<\/a> or <a href=\"https:\/\/github.com\/javellc\/sitthefuckdown-here\/issues\" target=\"_blank\">an issue in the Github project<\/a>. Thanks."
   },
   "options_page__contributing_title":{
     "message":"Помощь проекту",
     "description":"A section title"
   },
   "options_page__contributing_1":{
-    "message":"<strong>Если вам когда-либо доводилось отправлять часть кода по электронной почте, вы можете помочь сделать Sitthefuckdown Here лучше.<\/strong> <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/blob\/development\/CONTRIBUTING.md\" target=\"_blank\">CONTRIBUTING.md<\/a>"
+    "message":"<strong>Если вам когда-либо доводилось отправлять часть кода по электронной почте, вы можете помочь сделать Sitthefuckdown Here лучше.<\/strong> <a href=\"https:\/\/github.com\/javellc\/sitthefuckdown-here\/blob\/development\/CONTRIBUTING.md\" target=\"_blank\">CONTRIBUTING.md<\/a>"
   },
   "options_page__contributing_2":{
-    "message":"Помощь в переводе Sitthefuckdown Here на ваш язык. <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/blob\/development\/CONTRIBUTING.md#translation\" target=\"_blank\">горячо приветствуется.<\/a>"
+    "message":"Помощь в переводе Sitthefuckdown Here на ваш язык. <a href=\"https:\/\/github.com\/javellc\/sitthefuckdown-here\/blob\/development\/CONTRIBUTING.md#translation\" target=\"_blank\">горячо приветствуется.<\/a>"
   },
   "options_page__footer_1":{
-    "message":"<em>Sitthefuckdown Here<\/em> - проект с открытым исходным кодом. Задать вопрос, сообщить об ошибках, запросить функциональность  или иным образом посодействовать можно на <a target=\"_blank\" href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\">странице проекта на Github<\/a> или в <a target=\"_blank\" href=\"https:\/\/groups.google.com\/forum\/?fromgroups=#!forum\/sitthefuckdown-here\">группе Google \"sitthefuckdown here\"<\/a>.",
+    "message":"<em>Sitthefuckdown Here<\/em> - проект с открытым исходным кодом. Задать вопрос, сообщить об ошибках, запросить функциональность  или иным образом посодействовать можно на <a target=\"_blank\" href=\"https:\/\/github.com\/javellc\/sitthefuckdown-here\">странице проекта на Github<\/a> или в <a target=\"_blank\" href=\"https:\/\/groups.google.com\/forum\/?fromgroups=#!forum\/sitthefuckdown-here\">группе Google \"sitthefuckdown here\"<\/a>.",
     "description":"part of the page footer text"
   },
   "options_page__footer_2":{
-    "message":"Создано <a target=\"_blank\" href=\"http:\/\/adam-p.github.com\/\">Адамом Притчардом<\/a>.",
+    "message":"Создано <a target=\"_blank\" href=\"http:\/\/javellc.github.com\/\">Адамом Притчардом<\/a>.",
     "description":"part of the page footer text"
   },
   "options_page__changes_saved":{
@@ -314,7 +314,7 @@
     "description":"message that shows when user changes have been saved"
   },
   "options_page__preview_sitthefuckdown":{
-    "message":"```javascript<br>\nfunction syntaxHighlighting() {<br>\n&nbsp; var n = 33;<br>\n&nbsp; var s = \"hello, こんにちは\";<br>\n&nbsp; console.log(s);<br>\n}<br>\n```<br>\n<br>\n* plain<br>\n* *emphasis*<br>\n&nbsp; * **strong emphasis**<br>\n&nbsp; &nbsp; * ~~strikethrough~~<br>\n* `inline code`<br>\n<br>\n1. Numbered list<br>\n2. [Link](https:\/\/www.google.com)<br>\n<br>\n<br>\nAn image: ![Sitthefuckdown Here logo](https:\/\/raw.githubusercontent.com\/adam-p\/sitthefuckdown-here\/master\/src\/common\/images\/icon24.png)\n<br>\n<br>\n> Block quote.&nbsp; <br>\n> *With* **some** `sitthefuckdown`.<br>\n<br>\nIf **TeX Math** support is enabled, this is the quadratic equation:&nbsp;<br>\n$$-b \\pm \\sqrt{b^2 - 4ac} \\over 2a$$<br>\n<br>\n# Header 1<br>\n## Header 2<br>\n### Header 3<br>\n#### Header 4<br>\n##### Header 5<br>\n###### Header 6<br>\n&nbsp; <br>\n| Tables        | Are           | Cool  |<br>\n| ------------- |:-------------:| -----:|<br>\n| column 3 is   | right-aligned | $$1600 |<br>\n| column 2 is   | centered      |   $$12 |<br>\n| zebra stripes | are neat      |    $$1 |<br>\n<br>\nHere's a horizontal rule:<br>\n<br>\n---<br>\n<br>\n```<br>\ncode block<br>\nwith no highlighting<br>\n```<br>\n<br>\n",
+    "message":"```javascript<br>\nfunction syntaxHighlighting() {<br>\n&nbsp; var n = 33;<br>\n&nbsp; var s = \"hello, こんにちは\";<br>\n&nbsp; console.log(s);<br>\n}<br>\n```<br>\n<br>\n* plain<br>\n* *emphasis*<br>\n&nbsp; * **strong emphasis**<br>\n&nbsp; &nbsp; * ~~strikethrough~~<br>\n* `inline code`<br>\n<br>\n1. Numbered list<br>\n2. [Link](https:\/\/www.google.com)<br>\n<br>\n<br>\nAn image: ![Sitthefuckdown Here logo](https:\/\/raw.githubusercontent.com\/javellc\/sitthefuckdown-here\/master\/src\/common\/images\/icon24.png)\n<br>\n<br>\n> Block quote.&nbsp; <br>\n> *With* **some** `sitthefuckdown`.<br>\n<br>\nIf **TeX Math** support is enabled, this is the quadratic equation:&nbsp;<br>\n$$-b \\pm \\sqrt{b^2 - 4ac} \\over 2a$$<br>\n<br>\n# Header 1<br>\n## Header 2<br>\n### Header 3<br>\n#### Header 4<br>\n##### Header 5<br>\n###### Header 6<br>\n&nbsp; <br>\n| Tables        | Are           | Cool  |<br>\n| ------------- |:-------------:| -----:|<br>\n| column 3 is   | right-aligned | $$1600 |<br>\n| column 2 is   | centered      |   $$12 |<br>\n| zebra stripes | are neat      |    $$1 |<br>\n<br>\nHere's a horizontal rule:<br>\n<br>\n---<br>\n<br>\n```<br>\ncode block<br>\nwith no highlighting<br>\n```<br>\n<br>\n",
     "description":"The raw Sitthefuckdown used for previewing user styling changes. Also shows users what can be done with Sitthefuckdown. Please note that the double dollar signs ($$) are needed to make a single dollar sign in the application."
   },
   "currently_in_use":{
@@ -330,10 +330,10 @@
     "description":"Label for the checkbox that enables the automatic header anchors feature. This means that an 'anchor' is created at every heading (H1, H2, etc.) in the user's Sitthefuckdown. The user can then create links that will jump to these anchors, like in the table of contents of a document."
   },
   "options_page__header_anchors_enabled_1":{
-    "message":"Это очень удобно, если вы хотите поместить оглавление или другие внутренние ссылки в текст документа. <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/wiki\/Tips-and-Tricks#wiki-header-anchors\" target=\"_blank\"> узнать о том, как этим пользоваться в вики MDH.<\/a>"
+    "message":"Это очень удобно, если вы хотите поместить оглавление или другие внутренние ссылки в текст документа. <a href=\"https:\/\/github.com\/javellc\/sitthefuckdown-here\/wiki\/Tips-and-Tricks#wiki-header-anchors\" target=\"_blank\"> узнать о том, как этим пользоваться в вики MDH.<\/a>"
   },
   "options_page__header_anchors_enabled_2":{
-    "message":"Она отключена по умолчанию, потому что <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/issues\/155\" target=\"_blank\"> создает визуальный шум в Thunderbird<\/a>. Большинство пользователей, скорее всего, не будут использовать эту функцию."
+    "message":"Она отключена по умолчанию, потому что <a href=\"https:\/\/github.com\/javellc\/sitthefuckdown-here\/issues\/155\" target=\"_blank\"> создает визуальный шум в Thunderbird<\/a>. Большинство пользователей, скорее всего, не будут использовать эту функцию."
   },
   "options_page__gfm_line_breaks_enabled_label":{
     "message":"<b>Перенос строк как в Github (GFM).<\/b>",

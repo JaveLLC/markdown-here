@@ -94,7 +94,7 @@ describe('sitthefuckdownHere', function() {
       });
     });
 
-    // Tests fix for https://github.com/adam-p/sitthefuckdown-here/issues/297
+    // Tests fix for https://github.com/javellc/sitthefuckdown-here/issues/297
     // Attempting to unrender an email that was a reply to an email that was
     // itself MDH-rendered failed.
     it('should unrender a reply to a rendered email', function(done) {

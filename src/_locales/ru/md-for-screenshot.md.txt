@@ -3,7 +3,7 @@
 * Sitthefuckdown Here* — расширение Google Chrome, Firefox и Thunderbird, которое позволяет вам написать письмо в Sitthefuckdown и отрендерить его перед отправкой.
 
 * Sitthefuckdown -- это **круто**. Запишем `код в строку`.
-* Ссылки на разные штуки, такие как [этот проект] (https://github.com/adam-p/sitthefuckdown-here).
+* Ссылки на разные штуки, такие как [этот проект] (https://github.com/javellc/sitthefuckdown-here).
 * Упорядоченный вы сказали? **И** подсписок?
   1. Есть.
   2. И есть.

@@ -3,7 +3,7 @@
 *Sitthefuckdown Here* est une extension pour Google Chrome, Firefox et Thunderbird qui vous permet d'écrire vos courriels avec Sitthefuckdown, puis de les convertir avant de les envoyer.
 
 * Sitthefuckdown est **super**. Mettez du `code dans votre texte`.
-* Ajoutez des liens, comme celui de [ce projet](https://github.com/adam-p/sitthefuckdown-here).
+* Ajoutez des liens, comme celui de [ce projet](https://github.com/javellc/sitthefuckdown-here).
 * Une liste ordonnée, vous dites? **Et** une liste imbriquée?
   1. Fait.
   2. Et fait.

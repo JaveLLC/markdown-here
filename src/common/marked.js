@@ -446,20 +446,20 @@ Lexer.prototype.token = function(src, top, bq) {
  */
 
 var inline = {
-  escape: /^\\([\\`*{}\[\]()#+\-.!_>\$])/, /* adam-p: added \$ for math support */
+  escape: /^\\([\\`*{}\[\]()#+\-.!_>\$])/, /* javellc: added \$ for math support */
   autolink: /^<([^ >]+(@|:\/)[^ >]+)>/,
   url: noop,
   tag: /^<!--[\s\S]*?-->|^<\/?\w+(?:"[^"]*"|'[^']*'|[^'">])*?>/,
   link: /^!?\[(inside)\]\(href\)/,
   reflink: /^!?\[(inside)\]\s*\[([^\]]*)\]/,
-  math: /^\$([^ \t\n\$]([^\$]*[^ \t\n\$])?)\$/, /* adam-p: added for math support */
+  math: /^\$([^ \t\n\$]([^\$]*[^ \t\n\$])?)\$/, /* javellc: added for math support */
   nolink: /^!?\[((?:\[[^\]]*\]|[^\[\]])*)\]/,
   strong: /^__([\s\S]+?)__(?!_)|^\*\*([\s\S]+?)\*\*(?!\*)/,
   em: /^\b_((?:__|[\s\S])+?)_\b|^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,
   code: /^(`+)\s*([\s\S]*?[^`])\s*\1(?!`)/,
   br: /^ {2,}\n(?!\s*$)/,
   del: noop,
-  text: /^[\s\S]+?(?=[\$\\<!\[_*`]| {2,}\n|$)/ /* adam-p: added \$ for math support */
+  text: /^[\s\S]+?(?=[\$\\<!\[_*`]| {2,}\n|$)/ /* javellc: added \$ for math support */
 };
 
 inline._inside = /(?:\[[^\]]*\]|[^\[\]]|\](?=[^\[]*\]))*/;
@@ -485,7 +485,7 @@ inline.normal = merge({}, inline);
  */
 
 inline.pedantic = merge({}, inline.normal, {
-  math: noop, /* adam-p: added for math support */
+  math: noop, /* javellc: added for math support */
   strong: /^__(?=\S)([\s\S]*?\S)__(?!_)|^\*\*(?=\S)([\s\S]*?\S)\*\*(?!\*)/,
   em: /^_(?=\S)([\s\S]*?\S)_(?!_)|^\*(?=\S)([\s\S]*?\S)\*(?!\*)/
 });
@@ -574,7 +574,7 @@ InlineLexer.prototype.output = function(src) {
       continue;
     }
 
-    /* adam-p: added math support */
+    /* javellc: added math support */
     // math
     if (this.options.math
         && (cap = this.rules.math.exec(src))) {
@@ -722,7 +722,7 @@ InlineLexer.prototype.outputLink = function(cap, link) {
 InlineLexer.prototype.smartypants = function(text) {
   if (!this.options.smartypants) return text;
   return text
-    /* adam-p: Adding some smart arrows */
+    /* javellc: Adding some smart arrows */
     .replace(/<-->/g, '\u2194')
     .replace(/<--/g, '\u2190')
     .replace(/-->/g, '\u2192')
@@ -1278,7 +1278,7 @@ if (typeof exports === 'object') {
   define(function() { return marked; });
 } else {
   this.marked = marked;
-  this.EXPORTED_SYMBOLS = ['marked']; /* adam-p: added easier loading in Firefox */
+  this.EXPORTED_SYMBOLS = ['marked']; /* javellc: added easier loading in Firefox */
 }
 
 }).call(function() {

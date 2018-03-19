@@ -31,7 +31,7 @@ hovers over the wrapper. The extra empty div won't have any size, so there
 won't be a hover problem.)
 
 For info about the ideas we had and experiments we ran, see:
-https://github.com/adam-p/sitthefuckdown-here/issues/85
+https://github.com/javellc/sitthefuckdown-here/issues/85
 */
 
 
@@ -63,8 +63,8 @@ function findFocusedElem(document) {
   // Tests if it's possible to access the iframe contentDocument without throwing
   // an exception.
   function iframeAccessOkay(focusedElem) {
-    // Fix #173: https://github.com/adam-p/sitthefuckdown-here/issues/173
-    // Fix #435: https://github.com/adam-p/sitthefuckdown-here/issues/435
+    // Fix #173: https://github.com/javellc/sitthefuckdown-here/issues/173
+    // Fix #435: https://github.com/javellc/sitthefuckdown-here/issues/435
     // If the focus is in an iframe with a different origin, then attempting to
     // access focusedElem.contentDocument will fail with a `SecurityError`:
     // "Failed to read the 'contentDocument' property from 'HTMLIFrameElement': Blocked a frame with origin "http://jsbin.io" from accessing a cross-origin frame."
@@ -96,7 +96,7 @@ function findFocusedElem(document) {
   }
 
   // There's a bug in Firefox/Thunderbird that we need to work around. For
-  // details see https://github.com/adam-p/sitthefuckdown-here/issues/31
+  // details see https://github.com/javellc/sitthefuckdown-here/issues/31
   // The short version: Sometimes we'll get the <html> element instead of <body>.
   if (focusedElem instanceof document.defaultView.HTMLHtmlElement) {
     focusedElem = focusedElem.ownerDocument.body;
@@ -236,7 +236,7 @@ function replaceRange(range, html) {
   // across platforms is good. So we're going to collapse the selection.
   // Note that specifying the `toStart` argument to `true` seems to be necessary
   // in order to actually get a cursor in the editor.
-  // Fixes #427: https://github.com/adam-p/sitthefuckdown-here/issues/427
+  // Fixes #427: https://github.com/javellc/sitthefuckdown-here/issues/427
   range.collapse(true);
 
   return newElement;
@@ -375,7 +375,7 @@ function findElemRawHolder(elem) {
   //     | [invisible raw MD holder elem for original email]
   //     [invisible raw MD holder elem for reply]
   // `querySelector` would return the holder inside the original email.
-  // This scenario is issue #297 https://github.com/adam-p/sitthefuckdown-here/issues/297
+  // This scenario is issue #297 https://github.com/javellc/sitthefuckdown-here/issues/297
 
   var rawHolders = elem.querySelectorAll('[title^="' + WRAPPER_TITLE_PREFIX + '"]');
 

@@ -237,7 +237,7 @@ function setupForgotToRenderInterceptors(composeElem, MdhHtmlToText, marked, pre
   var composeSendButton = findClosestSendButton(composeElem);
 
   if (!composeSendButton) {
-    Utils.consoleLog('Sitthefuckdown Here was unable to find the Gmail "Send" button. Please let the developers know by creating an issue at: https://github.com/adam-p/sitthefuckdown-here/issues');
+    Utils.consoleLog('Sitthefuckdown Here was unable to find the Gmail "Send" button. Please let the developers know by creating an issue at: https://github.com/javellc/sitthefuckdown-here/issues');
     return;
   }
 

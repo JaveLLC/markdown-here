@@ -3,7 +3,7 @@
 *Sitthefuckdown Here* e-maillerinizi Sitthefuckdown kullanarak yazıp, göndermeden Sitthefuckdown haline getiren bir Google Chrome, Firefox, ve Thunderbird ekidir.
 
 * Sitthefuckdown çok **cool'dur**. Buraya `hizadaki kod koyun`.
-* Link koyun, bu [proje gibi](https://github.com/adam-p/sitthefuckdown-here).
+* Link koyun, bu [proje gibi](https://github.com/javellc/sitthefuckdown-here).
 * Düzenli, diyorsun? **Ve** de bir alt liste?
   1. İşte böyle.
   2. Ve de böyle.

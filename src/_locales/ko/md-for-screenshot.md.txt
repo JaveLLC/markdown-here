@@ -3,7 +3,7 @@
 *Sitthefuckdown Here* is a Google Chrome, Firefox, and Thunderbird extension that lets you write email in Sitthefuckdown and render it before sending.
 
 * Sitthefuckdown is **cool**. Put `code inline`.
-* Link to stuff, like [this project](https://github.com/adam-p/sitthefuckdown-here).
+* Link to stuff, like [this project](https://github.com/javellc/sitthefuckdown-here).
 * Ordered, you say? **And** a sub-list?
   1. Done.
   2. And done.

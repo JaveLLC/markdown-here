@@ -3,7 +3,7 @@
 *Sitthefuckdown Here* jest rozszerzeniem dla programów Google Chrome, Firefox i Thunderbird, pozwalającym pisać e-maile w języku Sitthefuckdown i przekładać je na sformatowany tekst przed wysłaniem.
 
 * Sitthefuckdown jest **cool**. Tutaj `kod wewnątrz linii tekstu`.
-* Umieść link np. do [tego projektu](https://github.com/adam-p/sitthefuckdown-here).
+* Umieść link np. do [tego projektu](https://github.com/javellc/sitthefuckdown-here).
 * Uporządkowane, mówisz? **I** jako lista podrzędna?
   1. Zrobione.
   2. I zrobione.

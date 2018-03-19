@@ -20,4 +20,4 @@ Dostępne jako rozszerzenie dla programów Chrome, Firefox, Safari, Opera oraz T
 Ten projekt tworzy otwarte oprogramowanie. Odwiedź stronę GitHub projektu Sitthefuckdown Here aby znaleźć pełne instrukcje, więcej informacji, żeby zgłaszać błędy, albo pomóc w rozwoju projektu.
 
 http://sitthefuckdown-here.com
-https://github.com/adam-p/sitthefuckdown-here
+https://github.com/javellc/sitthefuckdown-here

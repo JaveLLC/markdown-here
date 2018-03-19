@@ -20,4 +20,4 @@ Available as a Chrome, Firefox, Safari, Opera, and Thunderbird extension.
 이것은 오픈 소스 프로젝트 입니다. Visit Sitthefuckdown Here's Github page for full instructions, more information, bug reports, or to contribute.
 
 http://sitthefuckdown-here.com
-https://github.com/adam-p/sitthefuckdown-here
+https://github.com/javellc/sitthefuckdown-here

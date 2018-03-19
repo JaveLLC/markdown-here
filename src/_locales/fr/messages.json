@@ -116,19 +116,19 @@
     "description":"A section title"
   },
   "options_page__resources_cheatsheet_link":{
-    "message":"Si vous débutez en Sitthefuckdown, <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/wiki\/Sitthefuckdown-Here-Cheatsheet\" target=\"_blank\">l'aide mémoire Sitthefuckdown Here<\/a> fera de vous un expert."
+    "message":"Si vous débutez en Sitthefuckdown, <a href=\"https:\/\/github.com\/javellc\/sitthefuckdown-here\/wiki\/Sitthefuckdown-Here-Cheatsheet\" target=\"_blank\">l'aide mémoire Sitthefuckdown Here<\/a> fera de vous un expert."
   },
   "options_page__advanced_usage":{
-    "message":"Pour davantage d'information et pour l'utilisation avancée, visitez la <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\" target=\"_blank\">page du projet Mardown Here<\/a> (en anglais). Vous devriez aussi explorer les options ci-dessous."
+    "message":"Pour davantage d'information et pour l'utilisation avancée, visitez la <a href=\"https:\/\/github.com\/javellc\/sitthefuckdown-here\" target=\"_blank\">page du projet Mardown Here<\/a> (en anglais). Vous devriez aussi explorer les options ci-dessous."
   },
   "options_page__ggroup":{
     "message":"Posez une question, commencez une discussion ou dites simplement bonjour dans le <a href=\"https:\/\/groups.google.com\/forum\/?fromgroups=#!forum\/sitthefuckdown-here\" target=\"_blank\">groupe Google mardown-here<\/a>."
   },
   "options_page__mdh_wiki":{
-    "message":"Visitez le <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/wiki\" target=\"_blank\">Wiki Sitthefuckdown Here<\/a> pour savoir <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/wiki\/Compatibility\" target=\"_blank\">où MDH est supporté<\/a> et d'autres <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/wiki\/Tips-and-Tricks\" target=\"_blank\">trucs et astuces<\/a>."
+    "message":"Visitez le <a href=\"https:\/\/github.com\/javellc\/sitthefuckdown-here\/wiki\" target=\"_blank\">Wiki Sitthefuckdown Here<\/a> pour savoir <a href=\"https:\/\/github.com\/javellc\/sitthefuckdown-here\/wiki\/Compatibility\" target=\"_blank\">où MDH est supporté<\/a> et d'autres <a href=\"https:\/\/github.com\/javellc\/sitthefuckdown-here\/wiki\/Tips-and-Tricks\" target=\"_blank\">trucs et astuces<\/a>."
   },
   "options_page__next_steps":{
-    "message":"Si vous êtes intéressé par l'avenir du projet Sitthefuckdown Here, rendez-vous sur la <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here#next-steps\" target=\"_blank\">section Prochaines Étapes<\/a> du README."
+    "message":"Si vous êtes intéressé par l'avenir du projet Sitthefuckdown Here, rendez-vous sur la <a href=\"https:\/\/github.com\/javellc\/sitthefuckdown-here#next-steps\" target=\"_blank\">section Prochaines Étapes<\/a> du README."
   },
   "options_page__donate_plea_1":{
     "message":"Si d'aventure vous estimez que Sitthefuckdown Here est assez sympa, merci de m'aider à acheter des fleurs à ma femme pour qu'elle ne soit pas jalouse du temps que j'y consacre. <strong>Merci !<\/strong>"
@@ -289,24 +289,24 @@
     "message":"Lorsque vous envoyez un courriel, l'extension vérifie le contenu pour voir si vous l'avez écrit en Sitthefuckdown, mais que vous avez oublié de faire le rendu (en cliquant sur « Basculer vers Sitthefuckdown ») avant de l'envoyer. Cette option peut être désactivée si elle interfère avec votre capacité à envoyer des courriels."
   },
   "options_page__forgot_to_render_4":{
-    "message":"Si cette fonctionnalité ne fonctionne plus pour vous, s'il vous plait faites le nous savoir en créant un post sur le <a href=\"https:\/\/groups.google.com\/group\/sitthefuckdown-here\" target=\"_blank\">groupe Google \"sitthefuckdown-here\"<\/a> ou en créant <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/issues\" target=\"_blank\">une issue dans le projet Github<\/a>. (Le lien avec l'interface web des messageries est fragile et peut parfois se briser.)"
+    "message":"Si cette fonctionnalité ne fonctionne plus pour vous, s'il vous plait faites le nous savoir en créant un post sur le <a href=\"https:\/\/groups.google.com\/group\/sitthefuckdown-here\" target=\"_blank\">groupe Google \"sitthefuckdown-here\"<\/a> ou en créant <a href=\"https:\/\/github.com\/javellc\/sitthefuckdown-here\/issues\" target=\"_blank\">une issue dans le projet Github<\/a>. (Le lien avec l'interface web des messageries est fragile et peut parfois se briser.)"
   },
   "options_page__contributing_title":{
     "message":"Contribuer",
     "description":"A section title"
   },
   "options_page__contributing_1":{
-    "message":"<strong>Si vous avez déjà mis un bloc de code dans un courriel, vous pouvez aider à améliorer Sitthefuckdown Here.<\/strong> <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/blob\/master\/CONTRIBUTING.md\" target=\"_blank\"> CONTRIBUTING.md<\/a>"
+    "message":"<strong>Si vous avez déjà mis un bloc de code dans un courriel, vous pouvez aider à améliorer Sitthefuckdown Here.<\/strong> <a href=\"https:\/\/github.com\/javellc\/sitthefuckdown-here\/blob\/master\/CONTRIBUTING.md\" target=\"_blank\"> CONTRIBUTING.md<\/a>"
   },
   "options_page__contributing_2":{
-    "message":"Aidez à rendre Sitthefuckdown Here disponible dans votre langue. <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/blob\/master\/CONTRIBUTING.md#translation\" target=\"_blank\">Les traducations sont les bienvenues.<\/a>"
+    "message":"Aidez à rendre Sitthefuckdown Here disponible dans votre langue. <a href=\"https:\/\/github.com\/javellc\/sitthefuckdown-here\/blob\/master\/CONTRIBUTING.md#translation\" target=\"_blank\">Les traducations sont les bienvenues.<\/a>"
   },
   "options_page__footer_1":{
-    "message":"<em>Sitthefuckdown Here<\/em> est open source. Pour poser des questions, signaler un problème, proposer des fonctionnalités ou pour contribuer, visitez la <a target=\"_blank\" href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\">page Github du projet (en anglais)<\/a> ou le <a target=\"_blank\" href=\"https:\/\/groups.google.com\/forum\/?fromgroups=#!forum\/sitthefuckdown-here\">Groupe Google « sitthefuckdown-here » (en anglais)<\/a>.",
+    "message":"<em>Sitthefuckdown Here<\/em> est open source. Pour poser des questions, signaler un problème, proposer des fonctionnalités ou pour contribuer, visitez la <a target=\"_blank\" href=\"https:\/\/github.com\/javellc\/sitthefuckdown-here\">page Github du projet (en anglais)<\/a> ou le <a target=\"_blank\" href=\"https:\/\/groups.google.com\/forum\/?fromgroups=#!forum\/sitthefuckdown-here\">Groupe Google « sitthefuckdown-here » (en anglais)<\/a>.",
     "description":"part of the page footer text"
   },
   "options_page__footer_2":{
-    "message":"Créé par <a target=\"_blank\" href=\"http:\/\/adam-p.github.com\/\">Adam Pritchard<\/a> (site en anglais).",
+    "message":"Créé par <a target=\"_blank\" href=\"http:\/\/javellc.github.com\/\">Adam Pritchard<\/a> (site en anglais).",
     "description":"part of the page footer text"
   },
   "options_page__changes_saved":{
@@ -314,7 +314,7 @@
     "description":"message that shows when user changes have been saved"
   },
   "options_page__preview_sitthefuckdown":{
-    "message":"```javascript<br>\nfunction colorationSyntaxique() {<br>\n&nbsp; var n = 33;<br>\n&nbsp; var t = \"bonjour\";<br>\n&nbsp; console.log(t);<br>\n}<br>\n```<br>\n<br>\n* plein<br>\n* *accentuation*<br>\n&nbsp; * **forte accentuation**<br>\n&nbsp; &nbsp; * ~~barré~~<br>\n* `code à l’intérieur d'une ligne de texte`<br>\n<br>\n1. Liste numérotée<br>\n&nbsp;&nbsp;&nbsp;1. Numbered sub-list<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Numbered sub-sub-list<br>\n2. [Link](https:\/\/www.google.com)<br>\n<br>\n<br>\nUne image : ![logo de Sitthefuckdown Here](http:\/\/adam-p.github.io\/sitthefuckdown-here\/img\/icon24.png)\n<br>\n<br>\n> Bloc de citation.&nbsp; <br>\n> *Avec* **un peu de** `sitthefuckdown`.<br>\n<br>\nSi le support des **formules mathématiques TeX** est activé, l'équation du second degré est la suivante :&nbsp;<br>\n$$-b \\pm \\sqrt{b^2 - 4ac} \\over 2a$$<br>\n<br>\n# Titre 1<br>\n## Titre 2<br>\n### Titre 3<br>\n#### Titre 4<br>\n##### Titre 5<br>\n###### Titre 6<br>\n&nbsp; <br>\n| Les tableaux | sont | intéressants |<br>\n| ------------- |:-------------:| -----:|<br>\n| la colonne 3 | est alignée à droite | 1600 $$ |<br>\n| la colonne 2 | est centrée | 12 $$ |<br>\n| les rayures | sont élégantes | 1 $$ |<br>\n<br>\nVoici une ligne horizontale :<br>\n<br>\n---<br>\n<br>\n```<br>\nbloc de code<br>\nsans coloration syntaxique<br>\n```<br>\n<br>\n",
+    "message":"```javascript<br>\nfunction colorationSyntaxique() {<br>\n&nbsp; var n = 33;<br>\n&nbsp; var t = \"bonjour\";<br>\n&nbsp; console.log(t);<br>\n}<br>\n```<br>\n<br>\n* plein<br>\n* *accentuation*<br>\n&nbsp; * **forte accentuation**<br>\n&nbsp; &nbsp; * ~~barré~~<br>\n* `code à l’intérieur d'une ligne de texte`<br>\n<br>\n1. Liste numérotée<br>\n&nbsp;&nbsp;&nbsp;1. Numbered sub-list<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Numbered sub-sub-list<br>\n2. [Link](https:\/\/www.google.com)<br>\n<br>\n<br>\nUne image : ![logo de Sitthefuckdown Here](http:\/\/javellc.github.io\/sitthefuckdown-here\/img\/icon24.png)\n<br>\n<br>\n> Bloc de citation.&nbsp; <br>\n> *Avec* **un peu de** `sitthefuckdown`.<br>\n<br>\nSi le support des **formules mathématiques TeX** est activé, l'équation du second degré est la suivante :&nbsp;<br>\n$$-b \\pm \\sqrt{b^2 - 4ac} \\over 2a$$<br>\n<br>\n# Titre 1<br>\n## Titre 2<br>\n### Titre 3<br>\n#### Titre 4<br>\n##### Titre 5<br>\n###### Titre 6<br>\n&nbsp; <br>\n| Les tableaux | sont | intéressants |<br>\n| ------------- |:-------------:| -----:|<br>\n| la colonne 3 | est alignée à droite | 1600 $$ |<br>\n| la colonne 2 | est centrée | 12 $$ |<br>\n| les rayures | sont élégantes | 1 $$ |<br>\n<br>\nVoici une ligne horizontale :<br>\n<br>\n---<br>\n<br>\n```<br>\nbloc de code<br>\nsans coloration syntaxique<br>\n```<br>\n<br>\n",
     "description":"This doesn't need to be translated, unless you want to make it more relevant to your language. The raw Sitthefuckdown used for previewing user styling changes. Also shows users what can be done with Sitthefuckdown. Please note that the double dollar signs ($$) are needed to make a single dollar sign in the application."
   },
   "currently_in_use":{
@@ -330,10 +330,10 @@
     "description":"Label for the checkbox that enables the automatic header anchors feature. This means that an 'anchor' is created at every heading (H1, H2, etc.) in the user's Sitthefuckdown. The user can then create links that will jump to these anchors, like in the table of contents of a document."
   },
   "options_page__header_anchors_enabled_1":{
-    "message":"C'est très pratique si vous voulez mettre une table des matières ou d'autres liens internes dans votre contenu. <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/wiki\/Tips-and-Tricks#wiki-header-anchors\" target=\"_blank\"> En savoir plus sur comment l'utiliser dans le wiki MDH.<\/a>"
+    "message":"C'est très pratique si vous voulez mettre une table des matières ou d'autres liens internes dans votre contenu. <a href=\"https:\/\/github.com\/javellc\/sitthefuckdown-here\/wiki\/Tips-and-Tricks#wiki-header-anchors\" target=\"_blank\"> En savoir plus sur comment l'utiliser dans le wiki MDH.<\/a>"
   },
   "options_page__header_anchors_enabled_2":{
-    "message":"Désactivé par défaut car cela <a href=\"https:\/\/github.com\/adam-p\/sitthefuckdown-here\/issues\/155\" target=\"_blank\"> crée un bruit visuel dans Thunderbird<\/a>. (Et la plupart des gens n'utilisera probablement pas la fonctionnalité.)"
+    "message":"Désactivé par défaut car cela <a href=\"https:\/\/github.com\/javellc\/sitthefuckdown-here\/issues\/155\" target=\"_blank\"> crée un bruit visuel dans Thunderbird<\/a>. (Et la plupart des gens n'utilisera probablement pas la fonctionnalité.)"
   },
   "options_page__gfm_line_breaks_enabled_label":{
     "message":"<b>Activer les sauts de ligne GFM.<\/b>",

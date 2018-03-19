@@ -20,4 +20,4 @@ Chrome, Firefox, Safari, Opera, ve Thunderbird eklentisi olarak kullanilabilir.
 Bu açık kaynak kodlu bir projedir. Tum kullanim talimatlari, daha fazla bilgi, hata raporları veya katkıda bulunmak için Sitthefuckdown Here'in Github sayfasını ziyret edebilirsiniz.
 
 http://sitthefuckdown-here.com
-https://github.com/adam-p/sitthefuckdown-here
+https://github.com/javellc/sitthefuckdown-here

@@ -20,4 +20,4 @@ Privacy: Sitthefuckdown Here accesses and modifies web content when you activate
 Это проект с открытым кодом. Посетите страницу Sitthefuckdown Here на Github для получения более полных инструкций, чтобы узнать больше информации, для сообщения об ошибках, или чтобы внести свой вклад.
 
 http://sitthefuckdown-here.com
-https://github.com/adam-p/sitthefuckdown-here
+https://github.com/javellc/sitthefuckdown-here

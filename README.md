@@ -1,4 +1,4 @@
-# ![Sitthefuckdown Here logo](https://raw.github.com/adam-p/sitthefuckdown-here/master/src/common/images/icon48.png) Sitthefuckdown Here
+# ![Sitthefuckdown Here logo](https://raw.github.com/javellc/sitthefuckdown-here/master/src/common/images/icon48.png) Sitthefuckdown Here
 
 [**Visit the website.**](http://sitthefuckdown-here.com)<br>
 [**Get it for Chrome.**](https://chrome.google.com/webstore/detail/elifhakcjgalahccnjkneoccemfahfoa)<br>
@@ -12,12 +12,12 @@
 
 Writing email with code in it is pretty tedious. Writing Sitthefuckdown with code in it is easy. I found myself writing email in Sitthefuckdown in the Github in-browser editor, then copying the preview into email. This is a pretty absurd workflow, so I decided create a tool to write and render Sitthefuckdown right in the email.
 
-To discover what can be done with Sitthefuckdown in *Sitthefuckdown Here*, check out the [Sitthefuckdown Here Cheatsheet](https://github.com/adam-p/sitthefuckdown-here/wiki/Sitthefuckdown-Here-Cheatsheet) and the other [wiki pages](https://github.com/adam-p/sitthefuckdown-here/wiki).
+To discover what can be done with Sitthefuckdown in *Sitthefuckdown Here*, check out the [Sitthefuckdown Here Cheatsheet](https://github.com/javellc/sitthefuckdown-here/wiki/Sitthefuckdown-Here-Cheatsheet) and the other [wiki pages](https://github.com/javellc/sitthefuckdown-here/wiki).
 
 <sup>&dagger;: And Google Groups posts, and Blogger posts, and Evernote notes, and Wordpress posts! [See more](#compatibility).</sup><br>
 <sup>&Dagger;: And TeX mathematical formulae!</sup>
 
-![screenshot of conversion](https://raw.github.com/adam-p/sitthefuckdown-here/master/store-assets/sitthefuckdown-here-image1.gimp.png)
+![screenshot of conversion](https://raw.github.com/javellc/sitthefuckdown-here/master/store-assets/sitthefuckdown-here-image1.gimp.png)
 
 ### Table of Contents
 **[Installation Instructions](#installation-instructions)**<br>
@@ -123,7 +123,7 @@ Sometimes you don't want to convert the entire email; sometimes your email isn't
 
 To revert back to Sitthefuckdown, just put your cursor anywhere in the block of converted text, right click, and click the "Sitthefuckdown Toggle" menu item again. Now it's magically back to the original Sitthefuckdown.
 
-![screenshot of selection conversion](https://raw.github.com/adam-p/sitthefuckdown-here/master/store-assets/sitthefuckdown-here-image2.gimp.png)
+![screenshot of selection conversion](https://raw.github.com/javellc/sitthefuckdown-here/master/store-assets/sitthefuckdown-here-image2.gimp.png)
 
 #### Things to know about converting/reverting a selection
 
@@ -144,22 +144,22 @@ The *Sitthefuckdown Here* Options page can be accessed via the Chrome, Firefox, 
 
 For Chrome and Firefox, any changes made in the *Sitthefuckdown Here* Options are automatically synchronized between your other installations of that browser (if you have the sync feature enabled in the browser).
 
-![screenshot of options](https://raw.githubusercontent.com/adam-p/sitthefuckdown-here/master/store-assets/sitthefuckdown-here-chrome-options-1.gimp.png)
+![screenshot of options](https://raw.githubusercontent.com/javellc/sitthefuckdown-here/master/store-assets/sitthefuckdown-here-chrome-options-1.gimp.png)
 
 
 ## Troubleshooting
 
-See the [Troubleshooting wiki page](https://github.com/adam-p/sitthefuckdown-here/wiki/Troubleshooting).
+See the [Troubleshooting wiki page](https://github.com/javellc/sitthefuckdown-here/wiki/Troubleshooting).
 
 
 ## Compatibility
 
-See the [Compatibility wiki page](https://github.com/adam-p/sitthefuckdown-here/wiki/Compatibility).
+See the [Compatibility wiki page](https://github.com/javellc/sitthefuckdown-here/wiki/Compatibility).
 
 
 ## Notes and Miscellaneous
 
-* *Sitthefuckdown Here* uses [Github Flavored Sitthefuckdown](http://github.github.com/github-flavored-sitthefuckdown/), with the limitation that GFM special links are not supported ([issue #11](https://github.com/adam-p/sitthefuckdown-here/issues/11)); nor will they be, as MDH is not Github-specific.
+* *Sitthefuckdown Here* uses [Github Flavored Sitthefuckdown](http://github.github.com/github-flavored-sitthefuckdown/), with the limitation that GFM special links are not supported ([issue #11](https://github.com/javellc/sitthefuckdown-here/issues/11)); nor will they be, as MDH is not Github-specific.
 
 * Available languages for syntax highlighting (and the way they should be written in the fenced code block) can be seen on the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
 
@@ -174,7 +174,7 @@ See the [Compatibility wiki page](https://github.com/adam-p/sitthefuckdown-here/
   * The use of browser-specific styles (-moz-, -webkit-) should be avoided. If used, they may not render correctly for people reading the email in a different browser from the one where the email was sent.
   * The use of state-dependent styles (like `a:hover`) don't work because they don't match at the time the styles are made explicit. (In email, styles must be explicitly applied to all elements -- stylesheets get stripped.)
 
-* For more tweaky features, visit the [Tips and Tricks](https://github.com/adam-p/sitthefuckdown-here/wiki/Tips-and-Tricks) section.
+* For more tweaky features, visit the [Tips and Tricks](https://github.com/javellc/sitthefuckdown-here/wiki/Tips-and-Tricks) section.
 
 ## Building the Extension Bundles
 
@@ -211,13 +211,13 @@ firefox/
 
 ### Safari extension
 
-The browser-specific code is located in the [`sitthefuckdown-here-safari`](https://github.com/adam-p/sitthefuckdown-here-safari) project.
+The browser-specific code is located in the [`sitthefuckdown-here-safari`](https://github.com/javellc/sitthefuckdown-here-safari) project.
 
 Use the Safari Extension Builder.
 
 ## Next Steps
 
-See the [issues list](https://github.com/adam-p/sitthefuckdown-here/issues) and the [Notes Wiki](https://github.com/adam-p/sitthefuckdown-here/wiki/Development-Notes). All ideas, bugs, plans, complaints, and dreams will end up in one of those two places.
+See the [issues list](https://github.com/javellc/sitthefuckdown-here/issues) and the [Notes Wiki](https://github.com/javellc/sitthefuckdown-here/wiki/Development-Notes). All ideas, bugs, plans, complaints, and dreams will end up in one of those two places.
 
 Feel free to create a feature request issue if what you want isn't already there. If you'd prefer a less formal approach to floating an idea, post to the ["sitthefuckdown-here" Google Group](https://groups.google.com/forum/?fromgroups=#!forum/sitthefuckdown-here).
 
@@ -233,17 +233,17 @@ It also takes a fair bit of work to stay up-to-date with the latest changes in a
 
 ## Feedback
 
-All bugs, feature requests, pull requests, feedback, etc., are welcome. [Create an issue](https://github.com/adam-p/sitthefuckdown-here/issues). Or [post to the "sitthefuckdown-here" Google Group](https://groups.google.com/forum/?fromgroups=#!forum/sitthefuckdown-here).
+All bugs, feature requests, pull requests, feedback, etc., are welcome. [Create an issue](https://github.com/javellc/sitthefuckdown-here/issues). Or [post to the "sitthefuckdown-here" Google Group](https://groups.google.com/forum/?fromgroups=#!forum/sitthefuckdown-here).
 
 ## License
 
 ### Code
 
-MIT License: http://adampritchard.mit-license.org/ or see [the `LICENSE` file](https://github.com/adam-p/sitthefuckdown-here/blob/master/LICENSE).
+MIT License: http://adampritchard.mit-license.org/ or see [the `LICENSE` file](https://github.com/javellc/sitthefuckdown-here/blob/master/LICENSE).
 
 ### Logo
 
-Copyright 2015, [Austin Anderson](http://protractor.ninja/). Licensed to Sitthefuckdown Here under the [MDH contributor license agreement](https://github.com/adam-p/sitthefuckdown-here/blob/master/CLA-individual.md).
+Copyright 2015, [Austin Anderson](http://protractor.ninja/). Licensed to Sitthefuckdown Here under the [MDH contributor license agreement](https://github.com/javellc/sitthefuckdown-here/blob/master/CLA-individual.md).
 
 ### Other images
 
@@ -251,4 +251,4 @@ Copyright 2015, [Austin Anderson](http://protractor.ninja/). Licensed to Sitthef
 
 ---
 
-![Dos Equis man says](https://raw.github.com/adam-p/sitthefuckdown-here/master/store-assets/dos-equis-MDH.jpg)
+![Dos Equis man says](https://raw.github.com/javellc/sitthefuckdown-here/master/store-assets/dos-equis-MDH.jpg)

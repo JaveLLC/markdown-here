@@ -193,7 +193,7 @@ describe('Utils', function() {
       expect(Utils.getDocumentFragmentHTML(makeFragment(htmlArray))).to.equal(expectedHTML);
     });
 
-    // Test issue #133: https://github.com/adam-p/sitthefuckdown-here/issues/133
+    // Test issue #133: https://github.com/javellc/sitthefuckdown-here/issues/133
     // Thunderbird: raw HTML not rendering properly.
     // HTML text nodes were not being escaped properly.
     it('should escape HTML in a text node', function() {

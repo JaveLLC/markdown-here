@@ -121,11 +121,11 @@ function walkDOM(node, func) {
 
 // Next three functions from: http://stackoverflow.com/a/1483487/729729
 // Returns true if `node` is in `range`.
-// NOTE: This function is broken in Postbox: https://github.com/adam-p/sitthefuckdown-here/issues/179
+// NOTE: This function is broken in Postbox: https://github.com/javellc/sitthefuckdown-here/issues/179
 function rangeIntersectsNode(range, node) {
   var nodeRange;
 
-  // adam-p: I have found that Range.intersectsNode gives incorrect results in
+  // javellc: I have found that Range.intersectsNode gives incorrect results in
   // Chrome (but not Firefox). So we're going to use the fail-back code always,
   // regardless of whether the current platform implements Range.intersectsNode.
   /*

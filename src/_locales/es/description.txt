@@ -20,4 +20,4 @@ Disponible como extensión para Chrome, Firefox, Safari, Opera y Thunderbird.
 Éste es un proyecto de código fuente abierto. Visita la página Github de Sitthefuckdown Here para encontrar las instrucciones completas, más información, informes de errores o para contribuir.
 
 http://sitthefuckdown-here.com
-https://github.com/adam-p/sitthefuckdown-here
+https://github.com/javellc/sitthefuckdown-here
